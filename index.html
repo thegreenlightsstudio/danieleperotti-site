@@ -1,0 +1,1451 @@
+<!doctype html>
+<html lang="en" class="d-local">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daniele Perotti</title>
+<meta name="description" content="Daniele Perotti helps scale-ups build what they need next: new sources of growth, an operating system that scales, and the leaders to run it.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Daniele Perotti">
+<meta property="og:description" content="I help scale-ups build what they need next: new sources of growth, an operating system that scales, and the leaders to run it.">
+<meta property="og:image" content="https://www.danieleperotti.com/assets/link-preview.jpg">
+<meta property="og:url" content="https://www.danieleperotti.com/">
+<link rel="canonical" href="https://www.danieleperotti.com/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230E1320'/><circle cx='16' cy='16' r='4' fill='%23CF6D40'/></svg>">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+  /* Version 4 (5 November, evening): photos in colour. Clean warm white, deep stage-blue for the dark moments (taken from the
+     stage photo's own background), one cobalt accent. Daniele's notes applied: the stage photo fills the first screen, the name
+     smaller, the company logos on top in place of the "I've done it at" sentence, the five numbers straight below and arriving
+     one by one as you scroll (no counting, no heading), the motto as a break followed by Where I come in and the four problems,
+     Now after them. */
+  :root{
+    --paper:#FBFAF7; --paper-2:#F2EFE9; --dark:#0E1320; --dark-2:#151C2E;
+    --ink:#141821; --ink-soft:#586070; --rule:rgba(20,24,33,.13); --rule-strong:#141821;
+    --on-dark:#F6F5F1; --on-dark-soft:rgba(246,245,241,.74); --on-dark-rule:rgba(246,245,241,.16);
+    --accent:#2F5BEA; --accent-on-dark:#8EA8FF;
+    --sans:"Schibsted Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --sc-canvas:var(--paper); --sc-surface:var(--paper-2); --sc-ink:var(--ink); --sc-ink-soft:var(--ink-soft);
+    --sc-accent:var(--accent); --sc-accent-ink:#fff; --sc-font-display:var(--sans); --sc-font-text:var(--sans);
+    --h2:clamp(2.1rem, 1.3rem + 2.8vw, 4.2rem); --h3:clamp(1.25rem, 1.05rem + .7vw, 1.75rem); --lead:clamp(1.12rem, 1rem + .5vw, 1.4rem);
+    --gut:clamp(18px, 4vw, 56px); --sec:clamp(88px, 11vw, 160px);
+    interpolate-size:allow-keywords;
+  }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --paper:#10141E; --paper-2:#171C28; --ink:#EEF0F4; --ink-soft:#A9B0BE; --rule:rgba(238,240,244,.15); --rule-strong:rgba(238,240,244,.7); --accent:#8EA8FF; color-scheme:dark } }
+  :root[data-theme="dark"]{ --paper:#10141E; --paper-2:#171C28; --ink:#EEF0F4; --ink-soft:#A9B0BE; --rule:rgba(238,240,244,.15); --rule-strong:rgba(238,240,244,.7); --accent:#8EA8FF; color-scheme:dark }
+
+  html{background:var(--paper); scroll-padding-top:96px}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); font-size:1.0625rem; line-height:1.62; letter-spacing:-.008em; -webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4,p,figure,blockquote,ul,ol{margin:0}
+  ul,ol{padding:0; list-style:none}
+  h1,h2,h3,h4{font-weight:500; text-wrap:balance; letter-spacing:-.03em}
+  b{font-weight:500}
+  img{display:block; max-width:100%}
+  a{color:inherit; text-underline-offset:3px; text-decoration-thickness:1px}
+  a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+  ::selection{background:var(--accent); color:#fff}
+  .wrap{max-width:1240px; margin-inline:auto; padding-inline:var(--gut)}
+  .h2{font-size:var(--h2); line-height:1.02; letter-spacing:-.04em; max-width:20ch}
+  .lead{font-size:var(--lead); line-height:1.42; letter-spacing:-.015em; max-width:40ch}
+  .sec{padding-block:var(--sec)}
+  .btn{display:inline-flex; align-items:center; gap:10px; text-decoration:none; font-weight:500; font-size:15px; line-height:1; white-space:nowrap; padding:15px 22px; border-radius:999px; background:var(--accent); color:#fff; transition:transform .14s ease, background-color .2s ease}
+  .btn:hover{background:#1F45C8}
+  .btn:active{transform:translateY(1px)}
+  .focus[data-sc-in]{filter:blur(10px); opacity:.15; transform:translateY(10px); transition:filter .9s var(--sc-ease-out), opacity .9s var(--sc-ease-out), transform .9s var(--sc-ease-out)}
+  .focus[data-sc-in].sc-in{filter:none; opacity:1; transform:none}
+
+  .draft{background:var(--dark); color:var(--on-dark-soft); font-size:13px; padding:8px 0}
+
+  /* Menu pill */
+  .pill{position:fixed; z-index:50; top:calc(14px + env(safe-area-inset-top,0px)); left:50%; translate:-50% 0; display:flex; align-items:center; gap:4px; padding:6px;
+    background:rgba(251,250,247,.86); -webkit-backdrop-filter:saturate(1.4) blur(14px); backdrop-filter:saturate(1.4) blur(14px); border:1px solid var(--rule); border-radius:999px;
+    box-shadow:0 6px 24px rgba(14,19,32,.14); font-size:14px; max-width:calc(100vw - 24px); transition:top .35s var(--sc-ease-out)}
+  .pill .me{font-weight:600; text-decoration:none; padding:8px 14px; white-space:nowrap; color:var(--ink)}
+  .pill nav{display:flex}
+  .pill nav a{text-decoration:none; padding:8px 12px; border-radius:999px; white-space:nowrap; color:var(--ink-soft)}
+  .pill nav a:hover, .pill nav a[aria-current="true"]{color:var(--ink); background:rgba(20,24,33,.06)}
+  .pill .btn{padding:10px 16px; font-size:14px; transition:background-color .3s ease, color .3s ease, box-shadow .3s ease}
+  /* v5: while the first screen's own button is in view, the menu's button is quiet, so there is one blue button, not two */
+  body.hero-cta .pill .btn{background:transparent; color:var(--ink); box-shadow:inset 0 0 0 1px var(--rule)}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .pill{background:rgba(16,20,30,.82)} }
+  /* the bar is wider than the page's content (after ada.cx): name and links on the left, the button on the right */
+  .pill{width:min(calc(100vw - 24px), calc(min(1240px, 100vw) - 2 * var(--gut) + 160px)); padding:8px 8px 8px 12px}
+  .pill nav{margin-left:10px}
+  .pill > .btn{margin-left:auto}
+  /* the name is lit while the first part of the page (first screen and highlights) is in view */
+  .pill .me{border-radius:999px}
+  .pill .me[aria-current="true"]{background:rgba(20,24,33,.06)}
+  .pill__menu{display:none; font:inherit; font-size:14px; color:var(--ink-soft); background:none; border:0; border-radius:999px; padding:10px 12px; cursor:pointer}
+  .pill__menu:hover, .pill.open .pill__menu{color:var(--ink); background:rgba(20,24,33,.06)}
+  @media (max-width:980px){
+    .pill{left:12px; right:12px; translate:none}
+    .pill .me{margin-right:auto}
+    .pill__menu{display:block}
+    .pill nav{display:none; position:absolute; top:calc(100% + 8px); left:0; right:0; flex-direction:column; padding:8px; background:var(--paper); border:1px solid var(--rule); border-radius:22px; box-shadow:0 18px 40px -12px rgba(14,19,32,.3)}
+    .pill.open nav{display:flex}
+    .pill nav a{padding:14px 16px; font-size:16px; border-radius:14px}
+  }
+  @media (max-width:420px){ .pill{font-size:13px} .pill .me{padding-inline:10px} .pill__menu{font-size:13px; padding-inline:9px} .pill .btn{font-size:13px; padding-inline:12px} }
+
+  /* ===== 1. HERO, laid out from Daniele's editor arrangement (5 November): photo on the right two thirds; one column
+     on the left (as wide as the name) with the name, the label under it, the pitch and the button left-aligned under it; the logos along the
+     bottom of the column under a thin line, in his order (Booking.com, Rocket Internet, GFG, Zalora). ===== */
+  .hero{position:relative; min-height:calc(100svh - 33px); overflow:clip; background:var(--dark); color:var(--on-dark); display:grid}
+  .hero__photo{position:absolute; top:0; bottom:0; right:0; left:38%; margin:0; -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 18%); mask-image:linear-gradient(90deg, transparent 0, #000 18%)}
+  .hero__photo img{width:100%; height:112%; object-fit:cover; object-position:56% 22%}
+  .hero__shade{position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(90deg, rgba(14,19,32,.9) 0%, rgba(14,19,32,.6) 36%, rgba(14,19,32,.1) 58%, rgba(14,19,32,0) 70%), linear-gradient(0deg, rgba(14,19,32,.7) 0%, rgba(14,19,32,0) 30%)}
+  .hero__body{position:relative; z-index:1; display:flex; flex-direction:column; width:100%; min-height:calc(100svh - 33px);
+    padding-top:clamp(120px, 16svh, 170px); padding-bottom:clamp(24px, 5svh, 44px)}
+  .hero__col{width:min(560px, 100%); display:grid; margin-block:auto}
+  .hero__name{font-weight:600; font-size:clamp(3rem, 1.4rem + 4.6vw, 6.2rem); line-height:.92; letter-spacing:-.05em; color:var(--on-dark); white-space:nowrap}
+  .hero__label{margin-top:clamp(16px, 2.6svh, 24px); font-size:1.04rem; letter-spacing:.1em; text-transform:uppercase; font-weight:500; color:var(--accent-on-dark)}
+  .hero__pitch{margin-top:clamp(20px, 3.4svh, 30px); max-width:520px; font-size:clamp(1.2rem, 1rem + .8vw, 1.6rem); line-height:1.32; letter-spacing:-.018em; color:var(--on-dark); font-weight:500; text-wrap:pretty}
+  .hero__pitch b{color:var(--on-dark); font-weight:500}
+  .hero__col .btn{justify-self:start; margin-top:clamp(26px, 4.4svh, 40px)}
+  .hero__logos{margin-top:0; width:min(560px, 100%); display:flex; align-items:center; justify-content:space-between; gap:16px 24px; padding-top:clamp(16px, 2.4svh, 22px); border-top:1px solid var(--on-dark-rule)}
+  .lg{display:block; background:var(--on-dark); opacity:.9; -webkit-mask:var(--src) center / contain no-repeat; mask:var(--src) center / contain no-repeat}
+  .lg--rocket{--src:url("assets/logo-rocket.png"); height:22px; aspect-ratio:2000/408}
+  .lg--zalora{--src:url("assets/logo-zalora.png"); height:44px; aspect-ratio:640/237; margin-inline:-13px}
+  .lg--gfg{--src:url("assets/logo-gfg.svg"); height:30px; aspect-ratio:1589/452}
+  .lg--booking{--src:url("assets/logo-booking.svg"); height:20px; aspect-ratio:500/83}
+  @media (max-height:700px){ .hero__col{margin-block:0 40px} }
+  @media (max-width:1000px){
+    .hero__photo{left:0; -webkit-mask-image:none; mask-image:none}
+    .hero__photo img{object-position:62% 18%; height:100%}
+    .hero__shade{background:linear-gradient(0deg, rgba(14,19,32,.96) 0%, rgba(14,19,32,.84) 50%, rgba(14,19,32,.1) 76%)}
+    .hero__body{padding-top:38svh}
+    .hero__col{margin-block:0}
+    .hero__name{white-space:normal; font-size:clamp(2.8rem, 13vw, 4rem)}
+    .hero__label{font-size:.85rem; margin-top:16px}
+    .hero__col .btn{justify-self:start}
+    .hero__logos{flex-wrap:wrap; justify-content:space-between; margin-top:36px; row-gap:18px}
+    .lg{scale:.86}
+  }
+
+  /* ===== 2. The six highlights: six blocks touching each other under the photo, appearing one by one as you scroll ===== */
+  .nums{padding-block:clamp(28px, 4vw, 48px) clamp(24px, 3vw, 40px)}
+  .numlist{position:relative; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:0; border:1px solid var(--rule); border-radius:20px; overflow:hidden; background:var(--paper)}
+  /* each block's --lit (0 to 1) is set by the script below from how far you have scrolled */
+  .numlist.scroll-lit .row{opacity:var(--lit, 0); transform:translate3d(0, calc((1 - var(--lit, 0)) * 56px), 0)}
+  .row{display:grid; grid-template-rows:auto 1fr; align-content:start; gap:14px; padding:clamp(24px, 2.4vw, 34px); background:#fff; text-decoration:none; min-height:clamp(170px, 14vw, 210px); box-shadow:inset -1px 0 0 var(--rule), inset 0 -1px 0 var(--rule);
+    transition:background-color .25s ease}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .row{background:var(--paper-2)} }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .tile:hover{background:var(--paper-2)}
+    :root:not([data-theme="light"]) .btn, :root:not([data-theme="light"]) button.copy{color:#0E1320} :root:not([data-theme="light"]) .btn:hover, :root:not([data-theme="light"]) button.copy:hover{background:#A9BCFF} }
+  .row b{display:flex; align-items:baseline; gap:.14em; font-weight:600; font-size:clamp(2.1rem, 1.2rem + 2vw, 3.4rem); line-height:1; letter-spacing:-.05em; white-space:nowrap}
+  .row b.t{display:block; white-space:normal; font-size:clamp(1.5rem, 1.05rem + 1.2vw, 2.2rem); line-height:1.08; letter-spacing:-.035em}
+  .row b .u{font-weight:500; font-size:.42em; letter-spacing:-.02em}
+  .row b .acc{color:var(--accent)}
+  .row .nl{font-size:1rem; line-height:1.5; color:var(--ink-soft); max-width:34ch}
+  @media (max-width:900px){ .numlist{grid-template-columns:repeat(2, minmax(0,1fr))} }
+  @media (max-width:560px){ .numlist{grid-template-columns:1fr} .row{min-height:0} .row b{font-size:2.3rem} .row b.t{font-size:1.45rem} .row .nl{font-size:.95rem} }
+
+  /* ===== 3. About ===== */
+  .about{display:grid; grid-template-columns:minmax(0, 5fr) minmax(0, 7fr); gap:clamp(36px, 6vw, 96px); align-items:start}
+  .about-photo{margin:0; position:sticky; top:96px}
+  .about-photo .frame{overflow:hidden; aspect-ratio:4/5; border-radius:20px}
+  .about-photo img{width:100%; height:100%; object-fit:cover; object-position:50% 25%}
+  .about-text{display:grid; gap:18px; max-width:60ch}
+  .about-text .first{font-size:var(--lead); line-height:1.45; letter-spacing:-.015em}
+  .about-text h3{font-size:var(--h3); padding-top:18px}
+  @media (max-width:860px){ .about{grid-template-columns:1fr} .about-photo{position:static; max-width:420px} }
+
+  /* ===== 4. The motto, as a break ===== */
+  /* The motto: a shorter dark band, not a held screen. Words light up as the band crosses the screen; "Building the future"
+     and "now." turn blue. Behind it, scattered points of light gather into lines running to a light on the horizon. */
+  /* the band (66% of the screen) is held, centred, for an extra 90% of a screen of scrolling while the words light up */
+  .motto{--band:clamp(460px, 66svh, 680px); position:relative; height:calc(var(--band) + 90svh)}
+  .motto__band{position:sticky; top:max(0px, calc((100svh - var(--band)) / 2)); overflow:clip; background:var(--dark); color:var(--on-dark); height:var(--band); display:grid; align-content:center}
+  .motto{scroll-margin-top:max(0px, calc((100svh - var(--band)) / 2))}
+  .motto canvas{position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none}
+  .motto .wrap{position:relative; z-index:1; width:100%}
+  .motto p{font-weight:500; font-size:clamp(2.3rem, 1rem + 4.6vw, 5.8rem); line-height:.98; letter-spacing:-.055em; max-width:13ch}
+  .motto .w{display:inline-block; --lit:clamp(0, (var(--mp, var(--sc-p, 0)) - .1 - var(--i) * .036) / .08, 1); opacity:calc(.16 + var(--lit) * .84); transform:translateY(calc((1 - var(--lit)) * .12em))}
+  .motto .hl{color:color-mix(in oklab, var(--on-dark) calc((1 - var(--lit)) * 100%), var(--accent-on-dark))}
+  @media (prefers-reduced-motion: reduce){ .motto{height:auto} .motto__band{position:relative; top:auto} .motto .w{opacity:1; transform:none} .motto .hl{color:var(--accent-on-dark)} }
+  @media (max-width:760px){ .motto canvas{opacity:.55} }
+
+  /* ===== 5. Where I come in ===== */
+  .why .h2{max-width:none}
+  .why .ln{display:block}
+  .mark{position:relative; white-space:nowrap}
+  .mark svg{position:absolute; left:-4%; bottom:-.16em; width:108%; height:.42em; overflow:visible; pointer-events:none}
+  .mark path{fill:none; stroke:var(--accent); stroke-width:5; stroke-linecap:round; stroke-dasharray:420; stroke-dashoffset:420; transition:stroke-dashoffset 1.1s .5s var(--sc-ease-out)}
+  .sc-in .mark path{stroke-dashoffset:0}
+  .story{columns:2; column-gap:clamp(28px, 5vw, 80px); font-size:var(--lead); line-height:1.5; letter-spacing:-.012em; margin-top:clamp(28px, 3.6vw, 52px)}
+  .story p{break-inside:avoid; margin-bottom:20px}
+  .story p:last-child{font-weight:500}
+  /* the two audiences (from the removed "Who I work with" section): two equal panels, each with its own title */
+  .two{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:clamp(14px, 1.6vw, 22px); margin-top:clamp(20px, 2.6vw, 36px)}
+  .two > div{display:grid; gap:8px; align-content:start; background:var(--paper-2); border-radius:22px; padding:clamp(22px, 2.4vw, 32px)}
+  .two h3{font-size:var(--h3)}
+  @media (max-width:860px){ .story{columns:1; font-size:1.1rem} .two{grid-template-columns:1fr} .why .ln{display:inline} }
+
+  /* ===== 6. The four problems ===== */
+  .quad{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:clamp(14px, 1.6vw, 22px)}
+  .cell{display:flex; flex-direction:column; gap:14px; padding:clamp(24px, 2.6vw, 36px); background:#fff; border:1px solid var(--rule); border-radius:22px; scroll-margin-top:110px; transition:box-shadow .5s}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .cell{background:var(--paper-2)} }
+  .cell__head{display:grid; grid-template-columns:auto 1fr; align-items:center; gap:10px; margin:-30px 0 -6px -20px}
+  .cell .ico{display:block; width:192px; height:154px}
+  @media (max-width:560px){ .cell__head{grid-template-columns:1fr; gap:0; margin:-16px 0 0 -14px} .cell__head h3{margin-left:14px} .cell .ico{width:164px; height:131px} }
+  .cell .tag{font-size:1rem; line-height:1.3; letter-spacing:-.005em; font-weight:600; color:var(--accent)}
+  .cell h3{font-size:clamp(1.45rem, 1.1rem + 1vw, 2.05rem); line-height:1.1; letter-spacing:-.035em; max-width:22ch}
+  .cell > p{max-width:56ch}
+  /* each need is a full-width line that opens a pop-up with what it means and the proof */
+  .parts-note{font-size:.85rem; color:var(--ink-soft); margin-bottom:-4px}
+  .parts{display:grid; gap:5px}
+  .parts li{font-size:.95rem; line-height:1.2}
+  .part{font:inherit; color:var(--ink); display:flex; width:100%; align-items:center; justify-content:space-between; gap:14px; min-height:42px; padding:9px 14px 9px 16px; border:0; border-radius:12px; background:var(--paper-2); cursor:pointer; text-align:left; transition:background-color .2s}
+  .part::after{content:"+"; font-size:1.25em; line-height:1; color:var(--accent); font-weight:500}
+  .part:hover, .part:focus-visible{background:color-mix(in oklab, var(--accent) 12%, var(--paper-2))}
+  .part:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  @media (pointer:coarse){ .part{min-height:46px} }
+
+  .pop{width:min(640px, calc(100vw - 24px)); max-height:min(86svh, 760px); padding:0; border:1px solid var(--rule); border-radius:22px; background:#fff; color:var(--ink); box-shadow:0 40px 100px -30px rgba(14,19,32,.45); overflow:auto; overscroll-behavior:contain}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .pop{background:var(--paper-2)} }
+  .pop::backdrop{background:rgba(14,19,32,.5); backdrop-filter:blur(3px)}
+  .pop[open]{animation:pop-in .35s var(--sc-ease-out)}
+  @keyframes pop-in{from{opacity:0; transform:translateY(14px) scale(.985)} to{opacity:1; transform:none}}
+  .pop__in{position:relative; padding:clamp(26px, 4vw, 40px); display:grid; gap:14px}
+  .pop__close{position:absolute; right:16px; top:16px; width:40px; height:40px; border-radius:50%; border:1px solid var(--rule); background:transparent; color:var(--ink); cursor:pointer; font:inherit; font-size:1.4rem; line-height:1; display:grid; place-items:center}
+  .pop__close:hover{background:var(--paper-2)}
+  .pop .tag{font-size:1rem; line-height:1.3; letter-spacing:-.005em; font-weight:600; color:var(--accent); padding-right:52px}
+  .pop h3{font-size:clamp(1.5rem, 1.15rem + 1.1vw, 2.1rem); line-height:1.1; letter-spacing:-.035em; max-width:24ch; padding-right:40px}
+  .pop h4{margin:12px 0 -4px; font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; font-weight:500; color:var(--ink-soft)}
+  .pop h4::before{content:""; display:block; width:22px; height:2px; background:var(--accent); margin-bottom:12px}
+  .pop__proof{list-style:none; margin:0; padding:0; display:grid; gap:10px}
+  .pop__proof li{padding-left:16px; position:relative}
+  .pop__proof li::before{content:""; position:absolute; left:0; top:.72em; width:6px; height:6px; border-radius:50%; background:var(--accent)}
+  .pop__proof b{font-weight:600}
+  .pop__nav{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:10px; padding-top:16px; border-top:1px solid var(--rule)}
+  .pop__nav button{font:inherit; font-size:.92rem; font-weight:500; color:var(--ink); background:var(--paper-2); border:0; border-radius:999px; padding:10px 16px; cursor:pointer}
+  .pop__nav button:disabled{opacity:.35; cursor:default}
+  .pop__nav span{font-size:.85rem; color:var(--ink-soft)}
+  .cell__proof{margin-top:auto; padding-top:18px; border-top:1px solid var(--rule); display:grid; gap:10px}
+  /* under the line: the recommendation, in full, with who said it */
+  .cell__quote{margin:0}
+  .cell .cell__quote blockquote{margin:0; font-size:1em; line-height:1.45; letter-spacing:-.012em}
+  .quote blockquote{font-size:var(--lead); line-height:1.4; letter-spacing:-.015em; font-style:italic}
+  .quote figcaption{font-size:.92rem; color:var(--ink-soft); margin-top:12px; display:grid; grid-template-columns:auto 1fr; gap:12px; align-items:center}
+  .who-ph{width:46px; height:46px; border-radius:50%; object-fit:cover; background:var(--paper-2)}
+  .quote figcaption b{color:var(--ink)}
+  .quad-head{display:grid; grid-template-columns:minmax(0, 1fr) minmax(0, 30ch); align-items:end; gap:clamp(20px, 4vw, 64px); margin-bottom:clamp(36px, 4vw, 56px)}
+  .quad-head .h2{margin:0}
+  .closing-note{font-size:var(--lead); letter-spacing:-.015em; max-width:30ch; color:var(--ink-soft); margin:0; padding-bottom:.3em}
+  @media (max-width:860px){ .quad-head{grid-template-columns:1fr} }
+  @media (max-width:900px){ .quad{grid-template-columns:1fr} }
+  /* v5: side by side, the two cards in a row share their inner rows, so titles, labels, text, parts and the line above the quote all sit at the same height */
+  @media (min-width:901px){ .quad .cell{display:grid; grid-template-rows:subgrid; grid-row:span 6; row-gap:14px; align-content:start} .quad .cell__proof{margin-top:0; align-self:start} }
+
+  /* ===== 7. Now: the brands, after the problems ===== */
+  .tiles{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:22px; overflow:hidden}
+  .tile{background:var(--paper); display:grid; grid-template-rows:110px auto auto 1fr; gap:10px; padding:26px 22px 28px; transition:background-color .25s}
+  .tile:hover{background:#fff}
+  .tile .logo{align-self:center; justify-self:start; display:block; background:var(--ink); -webkit-mask:var(--src) left center / contain no-repeat; mask:var(--src) left center / contain no-repeat}
+  .logo--zymi{--src:url("assets/logo-zymi.png"); height:28px; aspect-ratio:1066/260}
+  .logo--tales{--src:url("assets/logo-tales.png"); height:70px; aspect-ratio:640/497}
+  .logo--antler{--src:url("assets/logo-antler.svg"); height:24px; aspect-ratio:117/28}
+  .logo--asop{--src:url("assets/logo-asop.svg"); height:70px; aspect-ratio:140.3/156.69}
+  .tile h3{font-size:1.3rem}
+  .tile p{font-size:.95rem; color:var(--ink-soft); line-height:1.55}
+  .tile .role{color:var(--ink); font-weight:500; margin-top:-6px}
+  .now-quote{grid-column:1 / -1; margin:0; background:var(--paper-2); padding:clamp(24px, 2.6vw, 36px) 22px}
+  .now-quote blockquote{max-width:52ch}
+  @media (max-width:980px){ .tiles{grid-template-columns:repeat(2, minmax(0,1fr))} }
+  @media (max-width:520px){ .tiles{grid-template-columns:1fr} .tile{grid-template-rows:72px auto auto 1fr; padding:18px 22px 24px} .logo--tales, .logo--asop{height:54px} }
+
+  /* ===== 10. How we work ===== */
+  .steps{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:clamp(14px, 1.6vw, 22px); margin-top:clamp(36px, 4vw, 56px)}
+  .steps > div{display:grid; gap:10px; align-content:start; padding:26px; border:1px solid var(--rule); border-radius:22px; background:#fff}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .steps > div{background:var(--paper-2)} }
+  .steps .tag{font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; font-weight:500; color:var(--accent)}
+  .steps h3{font-size:var(--h3)}
+  .ai{display:grid; grid-template-columns:minmax(0, 4fr) minmax(0, 7fr); gap:clamp(16px, 3vw, 40px); align-items:start; margin-top:clamp(36px, 4vw, 56px); background:var(--paper-2); border-radius:22px; padding:clamp(24px, 2.6vw, 36px)}
+  .ai-note{font-size:var(--lead); line-height:1.3; letter-spacing:-.015em; font-weight:500}
+  .ai p:last-child{max-width:62ch}
+  @media (max-width:900px){ .steps, .ai{grid-template-columns:1fr} }
+
+  /* ===== 11. Contact ===== */
+  .contact-sec{background:var(--paper-2); padding-block:var(--sec)}
+  .contact-grid{display:grid; grid-template-columns:minmax(0, 1fr) auto; gap:clamp(32px, 6vw, 96px); align-items:end}
+  .contact-sec .ph{margin:0; order:2; width:clamp(220px, 23vw, 310px); aspect-ratio:4/5; border-radius:20px; overflow:hidden} .contact-sec .ph img{width:100%; height:100%; object-fit:cover; object-position:45% 25%}
+  .contact-in{display:grid; gap:clamp(22px, 3.4vh, 36px)}
+  .contact-in .h2{font-size:clamp(2.6rem, 1.4rem + 4.4vw, 6rem); letter-spacing:-.055em; max-width:11ch}
+  .ask{font-size:var(--lead); letter-spacing:-.015em; color:var(--ink-soft); max-width:34ch}
+  .addr{font-weight:500; font-size:clamp(1.3rem, .8rem + 2.2vw, 2.8rem); letter-spacing:-.04em; overflow-wrap:anywhere; user-select:all; text-decoration:none}
+  a.addr:hover{text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:.14em}
+  .cta-row{display:flex; flex-wrap:wrap; gap:14px 22px; align-items:center}
+  button.copy{font:inherit; font-size:15px; font-weight:500; border:0; cursor:pointer; padding:15px 22px; border-radius:999px; background:var(--accent); color:#fff}
+  button.copy:hover{background:#1F45C8}
+  .cta-row a.li{font-size:15px; padding:12px 6px; margin:-12px -6px}
+  .foot{display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px 24px; padding:18px var(--gut); font-size:13px; color:var(--ink-soft); border-top:1px solid var(--rule)}
+  @media (max-width:860px){ .contact-grid{grid-template-columns:1fr; align-items:start; gap:28px} .contact-sec .ph{order:0; width:128px; aspect-ratio:1/1} }
+
+  @media (prefers-reduced-motion: reduce){
+    .pop[open]{animation:none}
+    .focus[data-sc-in]{filter:none; transform:none}
+    .mark path{transition:none; stroke-dashoffset:0}
+  }
+
+  /* ================= v6 (10 November): Daniele's selection from the trial page =================
+     lighter, larger headings against smaller text · Geist with Geist Mono for small labels · terracotta accent taken from
+     his photos · sharper boxes set apart by fill, no outlines · his name very large at the foot · dark version kept for dark devices */
+  :root{--sans:"Geist", "Helvetica Neue", Arial, sans-serif; --mono:"Geist Mono", ui-monospace, monospace;
+    --accent:#B4532A; --accent-on-dark:#CF6D40;   /* text on dark grounds: a mid terracotta, close to the button's and readable at small sizes (Daniele, 12 November) */
+    --h2:clamp(2.3rem, 1.2rem + 3.4vw, 4.4rem); --h3:clamp(1.2rem, 1.05rem + .5vw, 1.5rem); --lead:clamp(1.06rem, 1rem + .3vw, 1.22rem)}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--accent:#CF6D40} }
+  :root[data-theme="dark"]{--accent:#CF6D40}
+  /* dark devices: the two dark bands and the first screen sit a step deeper than the page, so they still stand out */
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--dark:#06080F} }
+  :root[data-theme="dark"]{--dark:#06080F}
+  .btn:hover, button.copy:hover{background:#96421F}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .btn:hover, :root:not([data-theme="light"]) button.copy:hover{background:#DC855B}
+    :root:not([data-theme="light"]) .pill nav a:hover, :root:not([data-theme="light"]) .pill nav a[aria-current="true"], :root:not([data-theme="light"]) .pill .me[aria-current="true"], :root:not([data-theme="light"]) .pill__menu:hover, :root:not([data-theme="light"]) .pill.open .pill__menu{background:rgba(238,240,244,.1)} }
+
+  /* type */
+  h1, h2, h3, .motto p, .promises li, .addr{font-weight:400; letter-spacing:-.026em}
+  .hero__name{font-weight:400; letter-spacing:-.035em}
+  .h2{letter-spacing:-.03em; line-height:1}
+  .contact-in .h2{letter-spacing:-.035em}
+  .hero__pitch{font-weight:400; font-size:clamp(1.08rem, 1rem + .4vw, 1.28rem); line-height:1.4; letter-spacing:-.01em}
+  .hero__pitch b{font-weight:400}
+  .story{font-size:1.125rem; line-height:1.55; letter-spacing:-.006em}
+  .row b{font-weight:400; letter-spacing:-.04em} .row b.t{letter-spacing:-.028em}
+  .cell > p, .steps p, .two p, .ai p{font-size:1rem; line-height:1.55}
+  .cell h3, .pop h3{letter-spacing:-.026em}
+  .cell .cell__quote blockquote{font-size:1rem}
+  .about-text p:not(.first){font-size:1rem}
+  .ai-note{font-weight:400}
+  .pill .me{font-weight:500}
+  /* small labels in the second, typewriter-style face */
+  .cell .tag, .pop .tag, .hero__label, .steps .tag, #part-count, .pop h4, .row b .u, .tile .role, .foot, .promises li::before{font-family:var(--mono); letter-spacing:0; font-weight:500}
+  .cell .tag, .pop .tag{font-size:.86rem; text-transform:uppercase; letter-spacing:.03em}
+  .hero__label{font-size:.9rem; letter-spacing:.06em}
+  .tile .role{font-size:.8rem}
+  .row b .u{font-size:.34em}
+
+  /* boxes: 12px corners, set apart by their fill; no pure white and no outlines */
+  .cell, .steps > div, .pop{border:0; border-radius:12px; background:var(--paper-2)}
+  .numlist{border:0; border-radius:12px; gap:2px; background:transparent}
+  .row{box-shadow:none; background:var(--paper-2)}
+  .tiles{border:0; border-radius:12px; gap:2px; background:transparent}
+  .tile, .tile:hover{background:var(--paper-2)}
+  .now-quote{background:color-mix(in oklab, var(--ink) 7%, var(--paper-2))}
+  .part{background:var(--paper); border-radius:8px}
+  .part:hover, .part:focus-visible{background:color-mix(in oklab, var(--accent) 10%, var(--paper))}
+  .pop__nav button{background:var(--paper)}
+  .two > div, .ai, .about-photo .frame, .contact-sec .ph{border-radius:12px}
+  .contact-sec{background:var(--paper)} .foot{border-top:0}
+  .hero__logos{border-top:0}
+
+  /* the name across the foot */
+  .bigname{display:block; overflow:hidden; background:var(--paper); color:var(--ink); padding:0 var(--gut); margin:0}
+  .bigname span{display:block; white-space:nowrap; font-weight:400; font-size:13.4vw; line-height:.74; letter-spacing:-.045em; margin-bottom:-.06em; transform:translateX(-.04em)}
+
+  /* ================= v6, 11 November: the eight design points Daniele chose on the design trial page.
+     They hang on classes set on <html> and <body> in the markup (d-fade, d-top, d-compass, d-scale, d-local, d-warm; he turned down the face staying in view during the hold, and kept the recommendations slanted). ================= */
+
+  /* 2 · headings fade in plainly */
+  body.d-fade .focus[data-sc-in]{filter:none; opacity:0; transform:none; transition:opacity .8s ease}
+  body.d-fade .focus[data-sc-in].sc-in{opacity:1}
+
+  /* 3 · a soft fade under the menu bar: text blurs out as it passes under it */
+  .topfade{display:none}
+  body.d-top .topfade{display:block; position:fixed; z-index:49; top:0; left:0; right:0; height:108px; pointer-events:none; -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); -webkit-mask-image:linear-gradient(#000 42%, transparent); mask-image:linear-gradient(#000 42%, transparent); transition:opacity .3s}
+  body.d-top.at-top .topfade{opacity:0}
+
+  /* 5 · nine text sizes instead of nineteen: 13 · 15 · 16 · 20 · 24 · 32 · 44 · 68 · 84 (and the name at the foot) */
+  body.d-scale{--lead:clamp(1.0625rem, 1rem + .35vw, 1.25rem)}
+  body.d-scale .cell .tag, body.d-scale .pop .tag, body.d-scale .steps .tag, body.d-scale .pop h4, body.d-scale .tile .role, body.d-scale .draft, body.d-scale .foot, body.d-scale #part-count, body.d-scale .hero__label{font-size:.8125rem}
+  body.d-scale .pill, body.d-scale .pill .me, body.d-scale .pill nav a, body.d-scale .pill__menu, body.d-scale .pill .btn, body.d-scale .quote figcaption, body.d-scale .pop__nav button, body.d-scale .btn, body.d-scale button.copy, body.d-scale .cta-row a.li, body.d-scale .part, body.d-scale .parts li, body.d-scale .tile p:not(.role), body.d-scale .row b .u, body.d-scale .parts-note{font-size:.9375rem}
+  body.d-scale .pop p, body.d-scale .pop li, body.d-scale .row .nl, body.d-scale .cell > p:not(.parts-note){font-size:1rem}
+  body.d-scale .story, body.d-scale .hero__pitch, body.d-scale .tile h3{font-size:var(--lead)}
+  body.d-scale .cell h3, body.d-scale .pop h3, body.d-scale .row b.t{font-size:clamp(1.45rem, 1.1rem + 1vw, 2rem)}
+  body.d-scale .promises li, body.d-scale .row b{font-size:clamp(1.75rem, 1rem + 2vw, 2.75rem)}
+  body.d-scale .addr{font-size:clamp(1.3rem, .8rem + 2.2vw, 2.75rem)}
+  body.d-scale .motto p, body.d-scale .contact-in .h2{font-size:clamp(2.5rem, 1.1rem + 4.6vw, 5.3rem)}
+  @media (min-width:1001px){ body.d-scale .hero__name{font-size:clamp(2.5rem, 1.1rem + 4.6vw, 5.3rem)} }
+  body.d-scale .pop__close{font-size:1.5rem}
+
+  /* 6 · Geist served from the site's own files */
+  @font-face{font-family:"Geist L"; font-style:normal; font-weight:100 900; font-display:swap; src:url("assets/fonts/geist-latin-ext.woff2") format("woff2"); unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+  @font-face{font-family:"Geist L"; font-style:normal; font-weight:100 900; font-display:swap; src:url("assets/fonts/geist-latin.woff2") format("woff2")}
+  @font-face{font-family:"Geist Mono L"; font-style:normal; font-weight:100 900; font-display:swap; src:url("assets/fonts/geist-mono-latin-ext.woff2") format("woff2"); unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+  @font-face{font-family:"Geist Mono L"; font-style:normal; font-weight:100 900; font-display:swap; src:url("assets/fonts/geist-mono-latin.woff2") format("woff2")}
+  html.d-local, html.d-local body{--sans:"Geist L", "Helvetica Neue", Arial, sans-serif; --mono:"Geist Mono L", ui-monospace, monospace; --sc-font-display:var(--sans); --sc-font-text:var(--sans)}
+  html.d-local body, html.d-local h1, html.d-local h2, html.d-local h3, html.d-local button, html.d-local .btn{font-family:var(--sans)}
+
+  /* 7 · the band: words back to light blue (with the blue light) */
+  body.d-bandblue .motto{--accent-on-dark:#8EA8FF}
+
+  /* 8 · the recommendations: upright, or a serif italic */
+  body.d-upright .quote blockquote{font-style:normal}
+  body.d-serif .quote blockquote, body.d-serif .cell .cell__quote blockquote{font-family:"Instrument Serif", Georgia, serif; font-style:italic; font-size:1.42rem; line-height:1.24; letter-spacing:0}
+  body.d-serif .now-quote blockquote{font-size:1.7rem}
+
+  /* 11 November: the sentence sits directly under the four-problems heading, on the left */
+  .quad-head{display:block}
+  .closing-note{max-width:none; margin-top:14px; padding-bottom:0}
+  /* the three promises, folded into "How we work" as three short lines */
+  .counts{margin-top:clamp(36px, 4vw, 56px)}
+  .counts h3{font-size:var(--h3); margin-bottom:18px}
+  .counts ol{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:clamp(14px, 1.6vw, 22px) clamp(20px, 3vw, 40px); counter-reset:c}
+  .counts li{counter-increment:c; font-size:var(--lead); line-height:1.35; letter-spacing:-.012em; max-width:30ch}
+  .counts li::before{content:"0" counter(c); display:block; font-family:var(--mono); font-size:.8125rem; font-weight:500; color:var(--accent); margin-bottom:8px}
+  @media (max-width:900px){ .counts ol{grid-template-columns:1fr} }
+
+  /* ---- 12 November: three sections Daniele called poorly done ---- */
+  /* Melina's quotation: out of the grey slab; her name under the first box's column, her words large across the other three */
+  .now-quote{display:grid; grid-template-columns:calc((100% - 6px) / 4 + 2px) minmax(0, 1fr); align-items:start; background:transparent; padding:0 22px; margin-top:clamp(36px, 4vw, 56px)}
+  .now-quote blockquote{order:2; font-size:1rem; line-height:1.45; letter-spacing:-.012em; max-width:62ch; margin-top:8px}
+  .now-quote figcaption{order:1; margin-top:6px; grid-template-columns:auto 1fr; align-items:start; padding-right:22px}
+  @media (max-width:980px){ .now-quote{grid-template-columns:1fr; gap:16px; padding:0} .now-quote blockquote{order:1} .now-quote figcaption{order:2; padding-right:0} }
+
+  /* "It starts small": one grid of three columns from top to bottom. The steps are joined cells like the other grids on the page;
+     the promises and the AI line each take the first column as their title and the other two as their text */
+  #how .lead{font-size:var(--h3); line-height:1.3; letter-spacing:-.02em; max-width:36ch; margin-top:20px}
+  .steps{gap:2px; border-radius:12px; overflow:hidden}
+  .steps > div{border-radius:0}
+  .counts, .ai{display:grid; grid-template-columns:calc((100% - 4px) / 3 + 2px + 26px) minmax(0, 1fr); gap:0; align-items:start; background:transparent; border-radius:0; padding:0; margin-top:clamp(40px, 4.4vw, 64px)}
+  .counts h3, .ai .ai-note{font-size:var(--h3); line-height:1.2; letter-spacing:-.026em; font-weight:400; margin:0; padding-right:clamp(20px, 3vw, 48px); max-width:16ch}
+  .counts ol{display:grid; grid-template-columns:1fr; gap:14px}
+  .counts li{display:grid; grid-template-columns:2.2em 1fr; align-items:baseline; max-width:none}
+  .counts li::before{display:inline; margin:0}
+  .ai p:last-child{font-size:1rem; line-height:1.55; max-width:62ch}
+  @media (max-width:900px){ .counts, .ai{grid-template-columns:1fr; gap:14px} .counts h3, .ai .ai-note{max-width:none; padding-right:0} }
+
+  /* Contact: one composed block. Things that belong together sit close (heading and question; address and buttons),
+     the two groups sit apart, and the photo is exactly as tall as the words beside it */
+  .contact-sec{padding-block:clamp(72px, 8vw, 128px) clamp(44px, 5vw, 72px)}
+  .contact-grid{align-items:stretch}
+  .contact-in{gap:0; align-content:start}
+  body .contact-sec .contact-in .h2{font-size:var(--h2); max-width:none}
+  .ask{margin-top:18px; max-width:46ch; text-wrap:balance}
+  .addr{margin-top:clamp(36px, 4vw, 56px)}
+  .cta-row{margin-top:22px}
+  .contact-sec .ph{position:relative; aspect-ratio:auto; align-self:stretch; width:clamp(220px, 22vw, 300px)}
+  .contact-sec .ph img{position:absolute; inset:0}
+  @media (max-width:860px){ .contact-sec .ph{aspect-ratio:1 / 1; align-self:start; width:128px} }
+
+  /* ================= 12 Nov, round 2: his three look points =================
+     1 the six highlight blocks stay in place; only the words inside them rise in
+     2 no reading text under 16px (menu and buttons stay at 15px)
+     3 typewriter-style labels kept only for step numbers and card labels (and the first screen's label, which he is happy with) */
+  .numlist.scroll-lit .row{opacity:1; transform:none}
+  .numlist.scroll-lit .row > *{opacity:var(--lit, 0); transform:translate3d(0, calc((1 - var(--lit, 0)) * 26px), 0)}
+  html body.d-scale .part, html body.d-scale .parts li, html body.d-scale .parts-note, html body.d-scale .tile p:not(.role), html body.d-scale .quote figcaption{font-size:1rem}
+  html body .row b .u, html body .tile .role, html body .foot, html body #part-count, html body .pop h4, html body .counts li::before{font-family:var(--sans)}
+  html body.d-scale .row b .u{font-size:1rem; font-weight:400; letter-spacing:-.01em; color:var(--ink-soft)}
+  html body.d-scale .tile .role{font-size:1rem; font-weight:500; letter-spacing:-.01em}
+  html body.d-scale .pop h4{font-size:.875rem; letter-spacing:.04em}
+  html body.d-scale .foot, html body.d-scale #part-count{font-size:.875rem; font-weight:400}
+  html body .counts li::before{font-size:.875rem}
+  .row b.t{text-wrap:balance}
+  @media (min-width:561px){ .row b.t{min-height:2.16em} }
+  .closing-note{text-wrap:pretty}
+  .story p:last-child{font-weight:inherit}
+  /* the four problems continue "Where I come in": smaller gap, and a sub-heading instead of a second full-size headline */
+  html body #why{padding-bottom:clamp(44px, 4.6vw, 68px)}
+  html body #problems .h2{font-size:clamp(1.7rem, 1.15rem + 1.7vw, 2.5rem); line-height:1.1; letter-spacing:-.03em; max-width:none}
+  /* the phone menu button: three lines that become a cross when the menu is open */
+  .pill__menu .bars{display:block; position:relative; width:18px; height:12px}
+  .pill__menu .bars i{position:absolute; left:0; right:0; height:1.5px; border-radius:2px; background:currentColor; transition:transform .25s, opacity .2s, top .25s}
+  .pill__menu .bars i:nth-child(1){top:0} .pill__menu .bars i:nth-child(2){top:5.25px} .pill__menu .bars i:nth-child(3){top:10.5px}
+  .pill.open .pill__menu .bars i:nth-child(1){top:5.25px; transform:rotate(45deg)}
+  .pill.open .pill__menu .bars i:nth-child(2){opacity:0}
+  .pill.open .pill__menu .bars i:nth-child(3){top:5.25px; transform:rotate(-45deg)}
+  html body .pill__menu{padding:13px 12px; color:var(--ink)}
+
+  /* ================= light / dark switch =================
+     The dark version used to follow the device only. These are the same dark rules, repeated so the switch in the menu bar can turn them on by hand
+     (data-theme="dark" on <html>); data-theme="light" keeps the light version on a dark device. Generated from the rules above: change both together. */
+  :root[data-theme="dark"]{ --paper:#10141E; --paper-2:#171C28; --ink:#EEF0F4; --ink-soft:#A9B0BE; --rule:rgba(238,240,244,.15); --rule-strong:rgba(238,240,244,.7); --accent:#8EA8FF; color-scheme:dark }
+:root[data-theme="dark"] .pill{background:rgba(16,20,30,.82)}
+:root[data-theme="dark"] .row{background:var(--paper-2)}
+:root[data-theme="dark"] .tile:hover{background:var(--paper-2)}
+    :root[data-theme="dark"] .btn, :root[data-theme="dark"] button.copy{color:#0E1320} :root[data-theme="dark"] .btn:hover, :root[data-theme="dark"] button.copy:hover{background:#A9BCFF}
+:root[data-theme="dark"] .cell{background:var(--paper-2)}
+:root[data-theme="dark"] .pop{background:var(--paper-2)}
+:root[data-theme="dark"] .steps > div{background:var(--paper-2)}
+:root[data-theme="dark"]{--accent:#CF6D40}
+:root[data-theme="dark"]{--dark:#06080F}
+:root[data-theme="dark"] .btn:hover, :root[data-theme="dark"] button.copy:hover{background:#DC855B}
+    :root[data-theme="dark"] .pill nav a:hover, :root[data-theme="dark"] .pill nav a[aria-current="true"], :root[data-theme="dark"] .pill .me[aria-current="true"], :root[data-theme="dark"] .pill__menu:hover, :root[data-theme="dark"] .pill.open .pill__menu{background:rgba(238,240,244,.1)}
+  .pill .theme{display:grid; place-items:center; flex:none; width:36px; height:36px; padding:0; border:0; border-radius:999px; background:none; color:var(--ink-soft); cursor:pointer; transition:color .2s, background-color .2s}
+  .pill .theme:hover{color:var(--ink); background:rgba(20,24,33,.06)}
+  .pill .theme:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  .pill .theme svg{display:block; width:20px; height:20px}
+  .pill .theme .sun{display:none}
+  :root[data-theme="dark"] .pill .theme .sun{display:block} :root[data-theme="dark"] .pill .theme .moon{display:none}
+  :root[data-theme="dark"] .pill .theme:hover{background:rgba(238,240,244,.1)}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .pill .theme .sun{display:block} :root:not([data-theme="light"]) .pill .theme .moon{display:none} :root:not([data-theme="light"]) .pill .theme:hover{background:rgba(238,240,244,.1)} }
+  .pill > .theme{margin-left:auto} .pill > .theme ~ .btn{margin-left:6px}
+  .pill .theme--row{display:none}
+  @media (max-width:980px){
+    .pill > .theme{display:none}
+    .pill .theme--row{display:flex; align-items:center; justify-content:space-between; width:100%; height:auto; padding:14px 24px; border-radius:0; border-top:1px solid var(--rule); font:inherit; font-size:15px; color:var(--ink-soft)}
+  }
+
+  /* ================= 13 Nov: his round-2 choices =================
+     two pen strokes under "Four problems", wiped in once when the heading comes into view · card labels in the normal typeface · cards wider than the column */
+  .mark2{position:relative; white-space:nowrap}
+  .mark2 svg{position:absolute; max-width:none; overflow:visible; pointer-events:none; height:.3em; clip-path:inset(-60% 0 -60% 0)}
+  .mark2 svg.s1{left:-4%; width:110%; bottom:-.2em} .mark2 svg.s2{left:3%; width:99%; bottom:-.4em}
+  .mark2 path{fill:none; stroke:var(--accent); stroke-width:2.5px; stroke-linecap:round; vector-effect:non-scaling-stroke}
+  @media (prefers-reduced-motion: no-preference){
+    .mark2 svg{clip-path:inset(-60% 100% -60% 0); transition:clip-path .7s cubic-bezier(.45,.05,.3,1)}
+    .h2.seen .mark2 svg{clip-path:inset(-60% 0 -60% 0)}
+    .h2.seen .mark2 svg.s1{transition-delay:.2s} .h2.seen .mark2 svg.s2{transition-delay:.75s; transition-duration:.55s}
+  }
+  html body.d-scale .cell .tag, html body.d-scale .pop .tag{font-family:var(--sans); font-size:1.0625rem; letter-spacing:.04em; font-weight:500}
+  body #problems .quad{margin-inline:calc(-1 * max(0px, min(80px, (100vw - 100%) / 2 - 16px)))}
+  /* the light/dark switch at the foot of the page */
+  .theme--foot{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; margin:-6px 0; border:0; border-radius:999px; background:none; font:inherit; color:var(--ink-soft); cursor:pointer; transition:color .2s, background-color .2s}
+  .theme--foot:hover{color:var(--ink); background:color-mix(in oklab, var(--ink) 7%, transparent)} .theme--foot:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  .theme svg{display:block; width:20px; height:20px; flex:none} .theme--foot svg{width:18px; height:18px}
+  .theme .sun{display:none}
+  :root[data-theme="dark"] .theme .sun{display:block} :root[data-theme="dark"] .theme .moon{display:none}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .theme .sun{display:block} :root:not([data-theme="light"]) .theme .moon{display:none} }
+  @media (max-width:700px){ html body #problems .h2{line-height:1.36} .mark2 svg.s1{bottom:-.16em} .mark2 svg.s2{bottom:-.32em} }
+  /* one typeface throughout: the typewriter style is gone from the step labels and the first screen's label too */
+  html body.d-scale .steps .tag, html body.d-scale .hero__label{font-family:var(--sans); font-weight:500; letter-spacing:.06em}
+  html body.d-scale .steps .tag{font-size:.875rem}
+  /* "Where I come in" answers the band above it, so it starts closer to it */
+  html body #why{padding-top:clamp(52px, 5.6vw, 84px)}
+  html body #why .story{margin-top:clamp(20px, 2.4vw, 34px)}
+
+  /* ================= MOCKUP: "How we work" as a sequence ================= */
+
+  .seq{list-style:none; margin:clamp(40px, 4.4vw, 64px) 0 0; padding:0; position:relative; display:grid}
+  .seq h3{font-size:var(--h3); line-height:1.2; letter-spacing:-.026em; font-weight:400; margin:0}
+  .seq p{font-size:1rem; line-height:1.55; margin:0}
+  .seq .n{font-family:var(--sans); font-variant-numeric:tabular-nums}
+  .seq .four{display:flex; flex-wrap:wrap; gap:6px; margin-top:4px}
+  .seq .four a{font-size:.875rem; text-decoration:none; color:var(--ink); background:var(--paper-2); border-radius:999px; padding:5px 12px; transition:background-color .2s}
+  .seq .four a:hover{background:color-mix(in oklab, var(--accent) 14%, var(--paper-2))}
+  /* A · one line with three points, drawn left to right */
+  body.h-a .seq{grid-template-columns:repeat(3, minmax(0,1fr)); column-gap:clamp(24px, 3.4vw, 56px)}
+  body.h-a .seq::before, body.h-a .seq::after{content:""; position:absolute; left:0; right:0; top:15px; height:1.5px; background:var(--rule)}
+  body.h-a .seq::after{background:var(--accent); transform-origin:left; transform:scaleX(0); transition:transform 1.6s cubic-bezier(.45,.05,.3,1) .2s}
+  body.h-a .seq.seen::after{transform:scaleX(1)}
+  body.h-a .seq li{position:relative; z-index:1; display:grid; gap:12px; align-content:start; padding-top:56px}
+  body.h-a .seq .n{position:absolute; top:0; left:0; width:32px; height:32px; border-radius:50%; display:grid; place-items:center; font-size:.875rem; font-weight:500; color:var(--accent); background:var(--paper); box-shadow:inset 0 0 0 1.5px var(--rule); transition:box-shadow .4s, background-color .4s, color .4s}
+  body.h-a .seq.seen .n{box-shadow:inset 0 0 0 1.5px var(--accent)}
+  body.h-a .seq.seen li:nth-child(2) .n{transition-delay:.2s} body.h-a .seq.seen li:nth-child(3) .n{transition-delay:.8s} body.h-a .seq.seen li:nth-child(4) .n{transition-delay:1.35s}
+  body.h-a .seq li:last-child .n{}
+  body.h-a .seq.seen li:last-child .n{background:var(--accent); color:var(--paper)}
+  @media (max-width:900px){
+    body.h-a .seq{grid-template-columns:1fr; row-gap:34px}
+    body.h-a .seq::before, body.h-a .seq::after{left:15px; right:auto; top:0; bottom:0; width:1.5px; height:auto}
+    body.h-a .seq::after{transform-origin:top; transform:scaleY(0)} body.h-a .seq.seen::after{transform:scaleY(1)}
+    body.h-a .seq li{padding-top:0; padding-left:54px}
+  }
+  /* B · three rows, as on the Greenlights method page */
+  body.h-b .seq{border-top:1px solid var(--ink)}
+  body.h-b .seq li{display:grid; grid-template-columns:4.2rem minmax(0, 1fr) minmax(0, 2fr); column-gap:clamp(16px, 2.4vw, 40px); row-gap:10px; align-items:baseline; padding:clamp(22px, 2.6vw, 34px) 0; border-bottom:1px solid var(--rule)}
+  body.h-b .seq .n{font-size:var(--h3); color:var(--accent); letter-spacing:-.02em} body.h-b .seq .n::before{content:"0"}
+  body.h-b .seq .four{grid-column:3}
+  @media (max-width:900px){ body.h-b .seq li{grid-template-columns:2.6rem minmax(0,1fr)} body.h-b .seq li p{grid-column:2} body.h-b .seq .four{grid-column:2} }
+  /* C · three joined boxes, as the section is built today */
+  body.h-c .seq{grid-template-columns:repeat(3, minmax(0,1fr)); gap:2px; border-radius:12px; overflow:hidden}
+  body.h-c .seq li{display:grid; gap:10px; align-content:start; padding:26px; background:var(--paper-2)}
+  body.h-c .seq .n{font-size:.875rem; font-weight:500; letter-spacing:.06em; color:var(--accent)} body.h-c .seq .n::before{content:"STEP "}
+  body.h-c .seq .four a{background:var(--paper)}
+  @media (max-width:900px){ body.h-c .seq{grid-template-columns:1fr} }
+
+  body.h-d .seq{grid-template-columns:repeat(3, minmax(0,1fr)); gap:clamp(10px, 1.2vw, 16px); align-items:start}
+  body.h-d .seq li{display:grid; gap:10px; align-content:start; padding:26px; background:var(--paper-2); border-radius:12px; transition:transform .9s cubic-bezier(.2,.7,.2,1), opacity .6s; transform:translateY(40px); opacity:0}
+  body.h-d .seq li:nth-child(1){margin-top:clamp(60px, 8vw, 120px)} body.h-d .seq li:nth-child(2){margin-top:clamp(30px, 4vw, 60px); transition-delay:.25s} body.h-d .seq li:nth-child(3){transition-delay:.5s}
+  body.h-d .seq.seen li{transform:none; opacity:1}
+  body.h-d .seq .n{font-size:clamp(2.4rem, 1.6rem + 2.4vw, 3.6rem); line-height:1; letter-spacing:-.04em; color:var(--accent); font-weight:400}
+  body.h-d .seq .four a{background:var(--paper)}
+  @media (max-width:900px){ body.h-d .seq{grid-template-columns:1fr} body.h-d .seq li:nth-child(n){margin-top:0} }
+  body.l-text .seq .four{gap:2px 14px} body.l-text .seq .four a, body.l-text.h-c .seq .four a, body.l-text.h-d .seq .four a{background:none; padding:0; border-radius:0; text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:3px; font-size:.9375rem}
+  /* ---- round 3 ---- */
+  .who-in{display:grid; place-items:center; font-size:.875rem; font-weight:500; color:var(--ink)}
+  .now-quote + .now-quote{margin-top:clamp(22px, 2.4vw, 34px)}
+  .draft-tag{display:inline-block; font-style:normal; font-size:.8125rem; background:#FFE9A8; color:#3A2C00; border-radius:4px; padding:1px 6px; margin-left:6px}
+  .seq .rise{display:none} .seq .we{color:inherit} .seq .tx{display:grid; gap:12px; align-content:start}
+  /* big type */
+  body.h-big .seq{grid-template-columns:1fr; gap:0; margin-top:clamp(30px, 3.4vw, 48px)}
+  body.h-big .seq li{position:relative; display:grid; grid-template-columns:minmax(0, 1fr) minmax(0, 1.25fr); column-gap:clamp(28px, 5vw, 88px); align-items:start; padding:0 0 clamp(34px, 4vw, 58px) 62px}
+  body.h-big .seq li:last-child{padding-bottom:0}
+  /* the thread: one line down the left that joins the three numbered points and fills as you go */
+  body.h-big .seq li::before, body.h-big .seq li::after{content:""; position:absolute; left:16px; top:17px; bottom:-17px; width:1.5px; background:var(--rule)}
+  body.h-big .seq li::after{background:var(--accent); transform-origin:top; transform:scaleY(0); transition:transform .7s cubic-bezier(.45,.05,.3,1)}
+  body.h-big .seq li:has(~ li.on)::after{transform:scaleY(1)}
+  body.h-big .seq li:last-child::before, body.h-big .seq li:last-child::after{display:none}
+  body.h-big .seq .n{position:absolute; z-index:1; left:0; top:0; width:34px; height:34px; border-radius:50%; display:grid; place-items:center; font-size:.875rem; font-weight:500; color:var(--ink-soft); background:var(--paper); box-shadow:inset 0 0 0 1.5px var(--rule); transition:box-shadow .4s, background-color .4s, color .4s}
+  body.h-big .seq li:has(~ li.on) .n{box-shadow:inset 0 0 0 1.5px var(--accent); color:var(--accent)}
+  body.h-big .seq li.on .n{background:var(--accent); color:var(--paper); box-shadow:inset 0 0 0 1.5px var(--accent)}
+  body.h-big .seq h3{font-size:clamp(1.45rem, 1.1rem + 1vw, 2rem); line-height:1.15; letter-spacing:-.03em; text-wrap:balance; padding-top:.1em}
+  body.h-big .seq .we{color:var(--accent)}
+  body.h-big .seq h3, body.h-big .seq .tx{opacity:.4; transition:opacity .5s}
+  body.h-big .seq li.on h3, body.h-big .seq li.on .tx{opacity:1}
+  /* the ending: once step three has had its turn, all three steps are lit together, one after the other */
+  body.h-big .seq.all li h3, body.h-big .seq.all li .tx{opacity:1}
+  body.h-big .seq.all li::after{transform:scaleY(1)}
+  html body.h-big ol.seq.all li:nth-of-type(n) .n{background:var(--accent); color:var(--paper); box-shadow:inset 0 0 0 1.5px var(--accent)}
+  body.h-big .seq.all li:nth-of-type(2) h3, body.h-big .seq.all li:nth-of-type(2) .tx, body.h-big .seq.all li:nth-of-type(2) .n{transition-delay:.35s}
+  body.h-big .seq .tx{padding-top:.25em} body.h-big .seq .tx p:not(.four){font-size:1.0625rem; line-height:1.55}
+  @media (max-width:900px){ body.h-big .seq li{grid-template-columns:1fr; row-gap:10px; padding-left:52px} }
+  /* "Where I come in" set at the size of "Four problems I'm brought in for" */
+  html body #why .h2{font-size:clamp(1.7rem, 1.15rem + 1.7vw, 2.5rem); line-height:1.1; letter-spacing:-.03em}
+  /* rising line */
+  body.h-curve .seq{grid-template-columns:repeat(3, minmax(0,1fr)); column-gap:4%; align-items:start; margin-top:clamp(40px, 4.4vw, 64px)}
+  body.h-curve .seq .rise{display:block; position:absolute; left:0; top:0; width:100%; height:144px; max-width:none; overflow:visible; clip-path:inset(-60px 100% -20px 0); transition:clip-path 1.8s cubic-bezier(.45,.05,.3,1) .15s}
+  body.h-curve .seq.seen .rise{clip-path:inset(-60px 0 -20px 0)}
+  body.h-curve .seq .rise path{fill:none; stroke:var(--accent); stroke-width:2; stroke-linecap:round; vector-effect:non-scaling-stroke}
+  body.h-curve .seq li{position:relative; z-index:1; display:grid; gap:12px; align-content:start; padding-top:52px}
+  body.h-curve .seq li:nth-child(2){margin-top:112px} body.h-curve .seq li:nth-child(3){margin-top:56px}
+  body.h-curve .seq .n{position:absolute; top:0; left:-16px; width:32px; height:32px; border-radius:50%; display:grid; place-items:center; font-size:.875rem; font-weight:500; color:var(--paper); background:var(--accent); transform:scale(0); transition:transform .45s cubic-bezier(.3,1.5,.5,1)}
+  body.h-curve .seq.seen .n{transform:scale(1)}
+  body.h-curve .seq.seen li:nth-child(2) .n{transition-delay:.25s} body.h-curve .seq.seen li:nth-child(3) .n{transition-delay:.85s} body.h-curve .seq.seen li:nth-child(4) .n{transition-delay:1.4s}
+  body.h-curve .seq h3{font-size:clamp(1.4rem, 1.1rem + 1.1vw, 2rem); letter-spacing:-.03em; line-height:1.1}
+  body.h-curve .seq li:nth-child(2){padding-left:0} body.h-curve .seq .n{left:0; transform-origin:center}
+  @media (max-width:900px){
+    body.h-curve .seq{grid-template-columns:1fr; row-gap:34px} body.h-curve .seq .rise{display:none}
+    body.h-curve .seq::before{content:""; position:absolute; left:15px; top:0; bottom:0; width:2px; background:var(--accent)}
+    body.h-curve .seq li:nth-child(n){margin-top:0; padding-top:0; padding-left:54px}
+  }
+  /* promise */
+  .prom{margin-top:clamp(64px, 8vw, 128px)}
+  .prom h3{font-size:var(--h3); line-height:1.2; letter-spacing:-.026em; font-weight:400; margin:0 0 clamp(16px, 1.8vw, 26px); color:var(--ink-soft)}
+  .prom__big{margin:0; font-size:clamp(1.8rem, 1rem + 3.1vw, 3.7rem); line-height:1.1; letter-spacing:-.036em; text-wrap:balance; max-width:22ch} 
+  .prom__big{max-width:none}
+  .prom__big em{font-style:normal; color:var(--accent)}
+  .prom__small{margin:clamp(22px, 2.6vw, 36px) 0 0; font-size:var(--lead); line-height:1.4; color:var(--ink-soft); max-width:46ch}
+  body.g-lines .prom__big .s{display:block; opacity:.2; transition:opacity .6s} body.g-lines .prom__big .s + .s{margin-top:.28em}
+  body.g-lines .prom.lit .s{opacity:1} body.g-lines .prom.lit .s:nth-child(2){transition-delay:.35s} body.g-lines .prom.lit .s:nth-child(3){transition-delay:.7s} body.g-lines .prom.lit .s:nth-child(4){transition-delay:1.05s}
+  body.g-dark .prom{--ink:#EEF0F4; --ink-soft:#B4BAC6; --accent:#CF6D40; color:var(--ink); background:#0E1320; box-shadow:0 0 0 100vmax #0E1320; clip-path:inset(0 -100vmax); padding-block:clamp(64px, 8vw, 120px); margin-bottom:calc(-1 * var(--sec) / 2)}
+  body.g-dark #how{overflow:visible}
+  /* a drawn mark on each sub-heading, each different from the double underline on "Four problems" */
+  .ring{position:relative; white-space:nowrap}
+  .ring svg{position:absolute; max-width:none; overflow:visible; pointer-events:none; left:-.4em; top:-.2em; width:calc(100% + .8em); height:calc(100% + .42em)}
+  .ring path{fill:none; stroke:var(--accent); stroke-width:2.5px; stroke-linecap:round; vector-effect:non-scaling-stroke}
+  .swipe{background:linear-gradient(100deg, transparent 0 1.5%, var(--accent) 3% 97%, transparent 98.5%) no-repeat 0 92%/100% .38em; padding:0 .14em; margin:0 -.14em}
+  @media (prefers-reduced-motion:no-preference){
+    .ring svg{clip-path:inset(-20% 100% -20% -10%); transition:clip-path 1s cubic-bezier(.45,.05,.3,1) .25s}
+    .seen .ring svg{clip-path:inset(-20% -10% -20% -10%)}
+    .swipe{background-size:0% .38em; transition:background-size .9s cubic-bezier(.45,.05,.3,1) .25s}
+    .seen .swipe{background-size:100% .38em}
+  }
+  html body.h-big .seq li{padding-bottom:clamp(48px, 6vw, 92px)} html body.h-big .seq li:last-child{padding-bottom:0}
+  html body.h-big .seq li::after{transition-duration:1.5s} html body.h-big .seq h3, html body.h-big .seq .tx{transition-duration:1.1s} html body.h-big .seq .n{transition-duration:.9s}
+  @media (min-width:901px){ .seq .four{display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); grid-auto-rows:1fr; gap:8px} .seq .four a{border-radius:14px; display:flex; align-items:center; padding:8px 14px; line-height:1.25} .seq .four .no{flex:none}
+    /* review pictures line up across a row of cards: every quote keeps room for three lines, and the short one is set on three */
+    html body .quad .cell{grid-row:span 7} .quad .cell__proof{display:contents} .quad .cell__quote{grid-row:span 2; display:grid; grid-template-rows:subgrid; row-gap:0; border-top:1px solid var(--rule); padding-top:18px; margin-top:4px} .quad .cell__quote figcaption{align-self:start} }
+  @media (max-width:900px){ html body .part{min-height:56px} }
+  html body .quad .cell__quote figcaption{align-items:start}
+  /* "Where I come in": an editor's insert mark under the "I", drawn in when the heading arrives */
+  .caret{position:relative; color:var(--accent)}
+  .caret svg{position:absolute; left:50%; top:calc(100% - .1em); width:.8em; max-width:none; height:.5em; margin-left:-.4em; overflow:visible; pointer-events:none}
+  .caret path{fill:none; stroke:var(--accent); stroke-width:2.6; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:1; stroke-dashoffset:0}
+  @media (prefers-reduced-motion:no-preference){ .caret path{stroke-dashoffset:1; transition:stroke-dashoffset .8s cubic-bezier(.45,.05,.3,1) .3s} .seen .caret path{stroke-dashoffset:0} }
+  .cin{position:relative; white-space:nowrap}
+  .cin svg, svg.cin__check{max-width:none; overflow:visible; pointer-events:none}
+  .cin__caret{position:absolute; left:50%; top:calc(100% - .1em); width:.8em; height:.5em; margin-left:-.4em}
+  .cin__check{display:inline-block; width:.74em; height:.68em; margin-left:.22em; vertical-align:-.04em}
+  .cin path, .cin__check path{fill:none; stroke:var(--accent); stroke-width:2.6; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:1; stroke-dashoffset:0}
+  .cin__check path{stroke-width:3.4}
+  .cin__caret, .cin__cur, .cin__dot, svg.cin__check{display:none}
+  body.w-cursor .cin{color:var(--accent)}
+  body.w-cursor .cin__cur{display:inline-block; width:.075em; height:.92em; margin-left:.1em; vertical-align:-.13em; border-radius:1px; background:var(--accent)}
+  body.w-dot .cin__dot{display:inline-block; position:relative; width:.24em; height:.24em; margin-left:.34em; vertical-align:.12em; border-radius:50%; background:var(--accent)}
+  body.w-dot .cin__dot::after{content:""; position:absolute; inset:0; border-radius:50%; border:1.5px solid var(--accent); opacity:0}
+  body.w-check svg.cin__check{display:inline-block; width:1.08em; height:.98em; margin-left:.2em; vertical-align:-.1em}
+  @keyframes cin-blink{0%, 55%{opacity:1} 56%, 100%{opacity:0}} @keyframes cin-ping{0%{transform:scale(1); opacity:.7} 70%, 100%{transform:scale(3.6); opacity:0}}
+  @media (prefers-reduced-motion:no-preference){ body.w-cursor .cin__cur{animation:cin-blink 1.15s infinite} body.w-dot .cin__dot::after{animation:cin-ping 2s cubic-bezier(.2,.6,.3,1) infinite} }
+  @media (prefers-reduced-motion:no-preference){ .cin path, .cin__check path{stroke-dashoffset:1; transition:stroke-dashoffset .8s cubic-bezier(.45,.05,.3,1) .35s} .seen .cin path, .seen .cin__check path{stroke-dashoffset:0} }
+  /* review round: bigger hero text, night switch in the hero corner, tighter gaps */
+  .theme--hero{display:none; position:absolute; z-index:60; top:calc(22px + env(safe-area-inset-top,0px)); left:calc((100vw - min(calc(100vw - 24px), calc(min(1240px, 100vw) - 2 * var(--gut) + 160px))) / 4 - 21px); place-items:center; width:42px; height:42px; padding:0; border:0; border-radius:50%; background:rgba(255,255,255,.1); color:rgba(255,255,255,.82); cursor:pointer; transition:background-color .2s, color .2s}
+  @media (min-width:1400px){ .theme--hero{display:grid} }
+  .theme--hero:hover{background:rgba(255,255,255,.2); color:#fff} .theme--hero:focus-visible{outline:2px solid var(--accent-on-dark, #CF6D40); outline-offset:2px}
+  @media (min-width:1001px){ html body.d-scale .hero__name{font-size:clamp(2.8rem, 1.2rem + 5.2vw, 6rem)} html body .hero__col{width:min(640px, 100%)} html body.d-scale .hero__pitch{font-size:clamp(1.2rem, 1rem + .7vw, 1.5rem); max-width:600px} }
+  html body.d-scale .hero__label{font-size:.9375rem}
+  @media (max-width:1000px){ html body.d-scale .hero__pitch{font-size:1.2rem} }
+  @media (min-width:901px){ html body #problems{margin-bottom:-38px} }
+  /* spacing pass: heading to its block 48, content to the next big heading or dark band 120, dark band to the next heading 95 */
+  @media (min-width:901px){ html body.h-big .seq{margin-top:34px} html body #now{padding-bottom:120px} html body.g-dark .prom{margin-bottom:calc(-1 * var(--sec) / 2 + 29px)} }
+  html body.g-dark .prom{padding-top:clamp(40px, 5.6vw, 82px)}
+  /* the three steps hold still while you scroll through them, so each one stays lit for longer */
+  .seqpin.pin{height:var(--ph)} .seqpin.pin .seq{position:sticky; top:var(--pt)}
+  body.c-photo .contact-grid{grid-template-columns:1fr}
+  /* C · the real photo, large, running off the right edge */
+  body.c-photo .contact-sec{position:relative; overflow:hidden; padding-block:clamp(90px, 11vw, 170px) clamp(70px, 8vw, 120px)}
+  body.c-photo .contact-sec .ph{position:absolute; inset:0 0 0 auto; width:min(48%, 760px); aspect-ratio:auto; border-radius:0; margin:0; order:0}
+  body.c-photo .contact-sec .ph img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 22%}
+  body.c-photo .contact-sec .ph::after{content:""; position:absolute; inset:0; background:linear-gradient(to right, #0E1320 0%, rgba(14,19,32,.55) 28%, rgba(14,19,32,0) 60%), linear-gradient(to top, #0E1320 0%, rgba(14,19,32,0) 30%)}
+  body.c-photo .contact-in{position:relative; z-index:1; max-width:min(54%, 620px)}
+  @media (max-width:860px){ body.c-photo .contact-sec .ph{position:relative; inset:auto; width:calc(100% + 2 * var(--gut)); margin:calc(-1 * clamp(90px, 11vw, 170px)) calc(-1 * var(--gut)) 0; height:300px} body.c-photo .contact-sec .ph::after{background:linear-gradient(to top, #0E1320 0%, rgba(14,19,32,0) 55%)} body.c-photo .contact-in{max-width:none} }
+  /* on laptops too narrow for the switch beside the menu bar, it sits at the left end of the bar */
+  html body .pill > .theme--pill{margin-left:0; margin-right:2px} html body .pill > .theme--pill ~ .btn{margin-left:auto} @media (min-width:1400px){ html body .pill > .theme--pill{display:none} }
+  /* brackets that close in around "Where I come in" */
+  .brk{position:relative; display:inline-block; padding:0 .42em; margin-left:-.42em}
+  .brk::before, .brk::after{content:""; position:absolute; top:.06em; height:1.02em; width:9px; border:1.6px solid #CF6D40; border-radius:1.5px; box-sizing:border-box}
+  .brk::before{left:0; border-right:0} .brk::after{right:0; border-left:0}
+  @media (prefers-reduced-motion:no-preference){
+    .brk::before, .brk::after{opacity:0; transition:transform .7s cubic-bezier(.2,.7,.2,1), opacity .7s ease-out}
+    .brk::before{transform:translateX(-48px)} .brk::after{transform:translateX(48px)}
+    .brk.in::before, .brk.in::after{opacity:1; transform:none}
+  }
+  /* buttons inside a problem card: one height for all of them, also when one name runs onto two lines */
+  html body .parts{grid-auto-rows:1fr; align-self:stretch} html body .parts li{display:grid} html body .part{height:100%}
+  .swipe{-webkit-box-decoration-break:clone; box-decoration-break:clone}
+  html body .prom h3{font-size:clamp(1.7rem, 1.15rem + 1.7vw, 2.5rem); line-height:1.1; letter-spacing:-.03em; font-weight:400; color:var(--ink); margin-bottom:clamp(20px, 2.4vw, 34px)}
+  .seq .four .no{color:var(--accent); font-weight:500; margin-right:.5em; font-variant-numeric:tabular-nums}
+  html body .prom__big{font-size:clamp(1.3rem, 1rem + 1.2vw, 2rem); line-height:1.16; letter-spacing:-.03em; text-wrap:pretty}
+  .prom__big .s{display:block} .prom__big .s + .s{margin-top:.5em}
+  body.f-pic.fp-l .contact-sec{background:linear-gradient(to bottom, #0E1320 0%, rgba(14,19,32,.3) 26%, rgba(14,19,32,.2) 70%, #0E1320 100%), linear-gradient(to left, rgba(14,19,32,.8) 0%, rgba(14,19,32,.15) 70%), url(assets/gen/foot-warm-l.jpg) center 60% / cover no-repeat #0E1320}
+  .gets{display:grid; grid-template-columns:calc((100% - 4px) / 3 + 2px + 26px) minmax(0, 1fr); align-items:start; margin-top:clamp(44px, 5vw, 72px)}
+  body.h-a .gets{grid-template-columns:calc((100% - 2 * clamp(24px, 3.4vw, 56px)) / 3 + clamp(24px, 3.4vw, 56px)) minmax(0, 1fr)}
+  .gets h3{font-size:var(--h3); line-height:1.2; letter-spacing:-.026em; font-weight:400; margin:0; max-width:14ch}
+  .gets ul{list-style:none; margin:0; padding:0; display:grid; gap:14px}
+  .gets li{font-size:var(--lead); line-height:1.4; letter-spacing:-.012em; color:var(--ink-soft)} .gets li b{font-weight:500; color:var(--ink)}
+  .gets li{font-size:1rem; line-height:1.55; letter-spacing:0} .gets li b{display:block; font-size:var(--lead); line-height:1.3; letter-spacing:-.012em; font-weight:400; margin-bottom:4px}
+  .gets ul{gap:22px}
+  body.g-grid .gets{grid-template-columns:1fr; gap:26px} body.g-grid .gets h3{max-width:none}
+  body.g-grid .gets ul{grid-template-columns:repeat(2, minmax(0,1fr)); gap:28px clamp(24px, 3.4vw, 56px)}
+  body.g-four .gets{grid-template-columns:1fr; gap:26px} body.g-four .gets h3{max-width:none}
+  body.g-four .gets ul{grid-template-columns:repeat(4, minmax(0,1fr)); gap:24px clamp(18px, 2.4vw, 36px)}
+  @media (max-width:900px){ body.g-grid .gets ul, body.g-four .gets ul{grid-template-columns:1fr} }
+  body.f-dark footer#contact, body.f-pic footer#contact{--paper:#0E1320; --paper-2:#151C2E; --ink:#EEF0F4; --ink-soft:#B4BAC6; --rule:rgba(238,240,244,.15); background:#0E1320; color:var(--ink)}
+  body.f-dark footer#contact .h2, body.f-pic footer#contact .h2, body.f-dark footer#contact .addr, body.f-pic footer#contact .addr{color:var(--ink)}
+  body.f-pic .contact-sec{background:linear-gradient(to bottom, #0E1320 0%, rgba(14,19,32,.25) 26%, rgba(14,19,32,.15) 70%, #0E1320 100%), linear-gradient(to right, rgba(14,19,32,.75) 0%, rgba(14,19,32,0) 60%), url(assets/gen/foot-warm.jpg) center 60% / cover no-repeat #0E1320}
+  @media (max-width:900px){ .gets, body.h-a .gets{grid-template-columns:1fr; gap:16px} .gets h3{max-width:none} }
+</style>
+<script>try{var t=localStorage.getItem('dp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body class="d-fade d-top d-compass d-scale d-local d-warm l-tags h-big g-dark f-dark c-photo">
+
+
+<header class="pill">
+  <button type="button" class="theme theme--pill"><svg class="moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 8.46 8.46 0 0 0 12 21a8.5 8.5 0 0 0 9-6.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  <a class="me" href="#top">Daniele Perotti</a>
+  <nav aria-label="Sections" id="pill-nav">
+    <a href="#about" data-nav="about">About me</a>
+    <a href="#solve" data-nav="problems">What I solve</a>
+    <a href="#how" data-nav="how">How we work</a>
+    <a href="#now" data-nav="now">Current Work &amp; Clients</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+  <button type="button" class="theme theme--row"><span class="lbl">Dark version</span><svg class="moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 8.46 8.46 0 0 0 12 21a8.5 8.5 0 0 0 9-6.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  </nav>
+  <button type="button" class="pill__menu" aria-label="Menu" aria-expanded="false" aria-controls="pill-nav"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
+  <a class="btn" href="#contact">Start a conversation</a>
+</header>
+
+<main>
+
+  <!-- 1 · HERO -->
+  <section class="hero" id="top" data-sc-act="flow">
+    <figure class="hero__photo"><img src="assets/gen/on-stage-1600.jpg" srcset="assets/gen/on-stage-1600.jpg 1600w, assets/gen/on-stage-2400.jpg 2400w, assets/gen/on-stage-3200.jpg 3200w" sizes="(max-width:1000px) 150vh, 170vh" alt="Daniele Perotti speaking on stage" width="1600" height="1066" data-sc-parallax="-1.1"></figure>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <button type="button" class="theme theme--hero"><svg class="moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 8.46 8.46 0 0 0 12 21a8.5 8.5 0 0 0 9-6.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="wrap hero__body">
+      <div class="hero__col">
+        <h1 class="hero__name">Daniele Perotti</h1>
+        <span class="hero__label">Builder and Operator · Amsterdam</span>
+        <p class="hero__pitch">I help scale-ups build what they need next: <b>new sources of growth, an operating system that scales, and the leaders to run it.</b></p>
+        <a class="btn" href="#contact">Start a conversation</a>
+      </div>
+      <div class="hero__logos" role="img" aria-label="Booking.com, Rocket Internet, Global Fashion Group, Zalora"><i class="lg lg--booking"></i><i class="lg lg--rocket"></i><i class="lg lg--gfg"></i><i class="lg lg--zalora"></i></div>
+    </div>
+  </section>
+
+  <!-- 2 · THE SIX HIGHLIGHTS (Daniele's list, 6 November): six blocks touching each other, each arriving slowly as you scroll -->
+  <section class="nums" id="proof" data-sc-act="flow">
+    <div class="wrap">
+      <div class="numlist" role="list">
+        <div class="row" role="listitem"><b class="t">15+ years</b><span class="nl">building and running digital businesses, always as General Manager with P&amp;L ownership, and an operating budget of up to €100M+</span></div>
+        <div class="row" role="listitem"><b class="t">Led global organizations</b><span class="nl">of up to 300+ people, across product, engineering, design, commercial and operations</span></div>
+        <div class="row" role="listitem"><b class="t">Zalora's marketplace, live in 5 months</b><span class="nl">built from zero beside the retail business: 4,000+ sellers and 130,000 products within a year, 17.5% of regional net merchandise value by the end of 2015</span></div>
+        <div class="row" role="listitem"><b class="t">6 companies, 27 countries</b><span class="nl">the marketplace launched and scaled across Global Fashion Group in under a year, with 12,000 sellers and 350+ international brands</span></div>
+        <div class="row" role="listitem"><b class="t">Launched Flights, scaled Attractions</b><span class="nl">at Booking.com: Attractions from under 1M to 3M+ transactions a year, and from 15k to 100k+ products</span></div>
+        <div class="row" role="listitem"><b class="t">Connected Trip product vision</b><span class="nl">co-owner of Booking.com's product vision, and customer service post-booking automated with OpenAI</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · ABOUT -->
+  <section class="sec" id="about" data-sc-act="flow" style="padding-top:clamp(24px, 3vw, 44px)">
+    <div class="wrap about">
+      <figure class="about-photo"><div class="frame"><img src="assets/portrait.jpg" alt="Daniele Perotti" width="900" height="1200" loading="lazy"></div></figure>
+      <div class="about-text" data-sc-in data-sc-stagger="60">
+        <h2 class="h2">About me</h2>
+        <p class="first">At Rocket Internet I moved to Singapore to launch Zalora's marketplace from zero, then rolled it out across Global Fashion Group. At Booking.com I incubated four new businesses, then led a division of 300+ people with full P&amp;L.</p>
+        <p class="first">The work I've loved most had three things in common: the energy, the complexity, the learning. Since January 2026 I have worked independently with scale-ups, because that is where I find all three again.</p>
+        <p class="first">I've been obsessively focused on what AI changes in how a company runs, and the edge it gives the leaders who get there first. All my work runs on my <em>second brain OS</em> and my businesses run on agents I build. Before that, I embedded AI at scale at Booking.com. So I know what holds up in daily operations and what only works in a demo.</p>
+        <h3>How I lead</h3>
+        <p>I lead by cutting through complexity and holding vision and strategy together. The vision is the big picture and what customers need. The strategy is how we get there: plan, systems, people. This brings to life a culture of energy and engagement, where we create value for the business by creating value for the customer.</p>
+        <h3>Beyond work</h3>
+        <p>I explore the world through travel, art and music, my constant sources of energy and inspiration. I also care about fitness and wellbeing, especially the ways mindfulness and technology can shape healthier lives.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · THE MOTTO, as a break -->
+  <section class="motto" id="solve" data-sc-act="flow">
+   <div class="motto__band">
+    <canvas id="horizon" aria-hidden="true"></canvas>
+    <div class="wrap"><p><span class="w hl" style="--i:0">Building</span> <span class="w hl" style="--i:1">the</span> <span class="w hl" style="--i:2">future</span> <span class="w" style="--i:3">starts</span> <span class="w" style="--i:4">with</span> <span class="w" style="--i:5">making</span> <span class="w" style="--i:6">sense</span> <span class="w" style="--i:7">of</span> <span class="w" style="--i:8">the</span> <span class="w hl" style="--i:9">now.</span></p></div>
+   </div>
+  </section>
+
+  <!-- 5 · WHERE I COME IN -->
+  <section class="sec" id="why" data-sc-act="flow">
+    <div class="wrap why">
+      <div data-sc-in><h2 class="h2"><span class="brk">Where I come in</span></h2></div>
+      <div class="story" data-sc-in data-sc-stagger="80">
+        <p>For fifteen years I built and ran digital businesses inside the companies that took e-commerce and travel marketplaces to global market leadership.<br>Today I do the same work with scale-ups, beside the founder: new sources of growth, an operating system that scales, and the leaders to run it.</p>
+        <p>&ldquo;Making sense of the now&rdquo; means holding the big picture and the detail that decides it at the same time. That is what turns a founder's vision into clear execution.<br>I operate as a partner and an insider, and what we build together keeps growing long after I've left.</p>
+      </div>
+      <div class="two" data-sc-in data-sc-stagger="80">
+        <div><h3>For founders and CEOs</h3><p>When every decision still comes to you, when growth has slowed and the fixes tried so far haven't joined up, or when a second business has to be built without starving the first.</p></div>
+        <div><h3>For the funds behind them</h3><p>When a portfolio company stalls after a round, when a founder needs a leadership team before the next one, or when a company opens a new market or a second line of business.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · THE FOUR PROBLEMS -->
+  <section class="sec" id="problems" data-sc-act="flow" style="padding-top:0">
+    <div class="wrap">
+      <div class="quad-head">
+        <h2 class="h2 focus" data-sc-in><span class="mark2">Four problems<svg class="s1" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M2 12 C 50 6, 130 5, 198 9"/></svg><svg class="s2" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 60 5, 130 6, 198 10"/></svg></span> I'm brought in for</h2>
+        <p class="closing-note">They are usually connected. Together, we decide where to start and which one to focus on.</p>
+      </div>
+      <div class="quad" data-sc-in data-sc-stagger="90">
+
+        <article class="cell" id="p1">
+          <div class="cell__head"><h3>Where to focus, and what to build next</h3></div>
+          <span class="tag">01 · Strategy and transformation</span>
+          <p>It isn't clear where to focus or what to build next, or a new phase is starting and the team isn't steering by the same number. Often it means a new business built beside the core.</p>
+          <p class="parts-note">Some key components. Open one for what it means and my proof.</p>
+          <ul class="parts"><li>A clear view of today's business</li><li>Vision, mission and values</li><li>Launching a new line of business</li><li>Strategy, turned into action</li><li>Priorities, and how success is measured</li></ul>
+          <div class="cell__proof">
+            <figure class="quote cell__quote"><blockquote>“Working across functions and markets, he held the strategic picture and the operational detail at once, building teams obsessed with high standards and high-paced delivery.”</blockquote><figcaption><img class="who-ph" src="assets/rec-alessandro-duri.jpg" alt="" width="92" height="92" loading="lazy"><span><b>Alessandro Durì</b>, co-founder of Pemo. We built drop-shipping across Southeast Asia together at Zalora.</span></figcaption></figure>
+          </div>
+        </article>
+
+        <article class="cell" id="p2">
+          <div class="cell__head"><h3>A product customers come back to</h3></div>
+          <span class="tag">02 · Product experience and customer centricity</span>
+          <p>The product is drifting away from its customers. Competitors move first, customers leave without warning, and product and engineering pull in different directions.</p>
+          <p class="parts-note">Some key components. Open one for what it means and my proof.</p>
+          <ul class="parts"><li>Knowing the competition</li><li>Customer needs: retention and churn</li><li>The product vision</li><li>The product strategy</li><li>Tech architecture and capabilities</li></ul>
+          <div class="cell__proof">
+            <figure class="quote cell__quote"><blockquote>“The collaboration was a fantastic two year journey that had a huge impact on the direction of the company and the clarity of what we built. Dani continues to be a trusted advisor I can go to for vision and direct feedback.”</blockquote><figcaption><img class="who-ph" src="assets/rec-molly-stevens.jpg" alt="" width="92" height="92" loading="lazy"><span><b>Molly Stevens</b>, Chief Product Officer at Amplify.One. We defined Booking.com's three-year vision together.</span></figcaption></figure>
+          </div>
+        </article>
+
+        <article class="cell" id="p3">
+          <div class="cell__head"><h3>Growth that moves again</h3></div>
+          <span class="tag">03 · Growth and profitability</span>
+          <p>Growth has stalled or costs too much. Supply, go-to-market, new markets or margins aren't keeping up, and money goes into AI with no clear return.</p>
+          <p class="parts-note">Some key components. Open one for what it means and my proof.</p>
+          <ul class="parts"><li>Scaling supply</li><li>Building the go-to-market</li><li>Expanding internationally</li><li>Improving margins</li><li>Efficiency through AI</li></ul>
+          <div class="cell__proof">
+            <figure class="quote cell__quote"><blockquote>“Dani stays receptive to every idea while still making the tough calls. When it comes to follow-through, decision-making, and removing blockers, there’s no one more dependable.”</blockquote><figcaption><img class="who-ph" src="assets/rec-miranda-slayter.jpg" alt="" width="92" height="92" loading="lazy"><span><b>Miranda Slayter</b>, Principal UX Designer at Booking.com.</span></figcaption></figure>
+          </div>
+        </article>
+
+        <article class="cell" id="p4">
+          <div class="cell__head"><h3>A company that runs without the founder in every decision</h3></div>
+          <span class="tag">04 · Organization design and governance</span>
+          <p>A strong founder with no leadership team below them, an organization shaped by its history, and key knowledge in a few people's heads.</p>
+          <p class="parts-note">Some key components. Open one for what it means and my proof.</p>
+          <ul class="parts"><li>Building the leadership team</li><li>Designing the organization</li><li>Decision principles and leadership behaviors</li><li>Governance and systems</li><li>Board and investor reporting</li></ul>
+          <div class="cell__proof">
+            <figure class="quote cell__quote"><blockquote>“Daniele is an amazing leader – he has a rare combination of excellent problem solving skills and a very strong ability to care for and develop the team.”</blockquote><figcaption><img class="who-ph" src="assets/rec-fridtjof-berge.jpg" alt="" width="92" height="92" loading="lazy"><span><b>Fridtjof Berge</b>, co-founder of Antler. We set up Global Fashion Group's marketplace division together in 2015.</span></figcaption></figure>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · HOW WE WORK, with the three promises folded in -->
+  <section class="sec" id="how" data-sc-act="flow" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="h2 focus" data-sc-in>How we work</h2>
+      <ol class="seq" data-sc-in>
+        <svg class="rise" viewBox="0 0 100 144" preserveAspectRatio="none" aria-hidden="true"><path d="M0,128 C10,116 24,90 34.667,72 S58,34 69.333,16 S90,-10 100,-18"/></svg>
+        <li><span class="n">1</span><h3><span class="we">We</span> agree where to start</h3><div class="tx"><p>We start from the problem, if it is already clear. If it isn't, we look at the company as a whole: how it makes money, how it runs, who leads it, and where the product is going. We then decide together which of the four problems comes first, and the result we are after.</p>
+          <p class="four"><a href="#p1"><span class="no">01</span>Strategy and transformation</a><a href="#p2"><span class="no">02</span>Product experience and customer centricity</a><a href="#p3"><span class="no">03</span>Growth and profitability</a><a href="#p4"><span class="no">04</span>Organization design and governance</a></p></div></li>
+        <li><span class="n">2</span><h3><span class="we">We</span> build what comes next</h3><div class="tx"><p>We work side by side, inside your company. We put in place the operating system I have set up in each area I've led: one mission, the few numbers that matter, the right people. We choose those people together, and we build with them.</p></div></li>
+        <li><span class="n">3</span><h3><span class="we">We</span> ensure it keeps growing</h3><div class="tx"><p>We measure everything by the result: faster execution, better outcomes for customers, revenue growth, and teams that deliver. We end up with infrastructure that lasts and growth that compounds.</p></div></li>
+      </ol>
+      <div class="prom" data-sc-in>
+        <h3><span class="swipe">My promise</span></h3>
+        <p class="prom__big"><span class="s">I bring <em>calm and clarity</em> when the stakes are high, <span class="so">so the right decisions get made.</span></span> <span class="s">I'm <em>always honest</em> about what I see, <span class="so">because I care about us succeeding together.</span></span> <span class="s">I <em>push for the result</em>, <span class="so">so the work shows up in your numbers.</span></span> <span class="s">I <em>build with your people</em>, <span class="so">so they come out stronger.</span></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · CURRENT WORK AND CLIENTS -->
+  <section class="sec" id="now" data-sc-act="flow" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="h2 focus" data-sc-in style="margin-bottom:20px">Who I'm working with now</h2>
+      <div class="tiles" data-sc-in data-sc-stagger="70">
+        <article class="tile"><i class="logo logo--antler" aria-hidden="true"></i><h3>Antler Amsterdam</h3><p class="role">Startup mentor, since 2019</p><p>Early-stage venture capital. I mentor the founders it backs in Amsterdam.</p></article>
+        <article class="tile"><i class="logo logo--asop" aria-hidden="true"></i><h3>a Sense of Place</h3><p class="role">Co-owner</p><p>Specialty coffee and hi-fi listening bar in Amsterdam. The real business where I apply what I learn about AI.</p></article>
+        <article class="tile"><i class="logo logo--tales" aria-hidden="true"></i><h3>Tales Tensor</h3><p class="role">Board adviser</p><p>AR travel tech. I advise on product vision, marketplace design and strategy.</p></article>
+        <article class="tile"><i class="logo logo--zymi" aria-hidden="true"></i><h3>ZYMI</h3><p class="role">Board adviser</p><p>Organic consumer goods. I advise the founder as the company prepares its first investment round.</p></article>
+      </div>
+      <figure class="quote now-quote"><blockquote>“He has advised me on crucial operational bottlenecks while ensuring we never lose the human energy that built the company.”</blockquote><figcaption><img class="who-ph" src="assets/rec-melina-giolva.jpg" alt="" width="92" height="92" loading="lazy"><span><b>Melina Giolva</b>, founder and CEO of ZYMI, February 2026</span></figcaption></figure>
+      <figure class="quote now-quote now-quote--draft"><blockquote>“Dani is a natural-born entrepreneur, a man of taste and a great co-founder to partner with. He can always connect the dots and see the big picture, and he gets to depth in a new domain faster than anyone I've worked with.”</blockquote><figcaption><img class="who-ph" src="assets/rec-aj-trouwee.jpg" alt="" width="92" height="92" loading="lazy"><span><b>AJ Trouwee</b>, Principal Product Manager at Booking.com and co-owner of a Sense of Place</span></figcaption></figure>
+    </div>
+  </section>
+
+</main>
+
+<!-- 11 · CONTACT -->
+<footer id="contact">
+  <div class="contact-sec"><div class="wrap contact-grid">
+    <figure class="ph"><img src="assets/candid.jpg" alt="Daniele Perotti in conversation" loading="lazy"></figure>
+    <div class="contact-in">
+      <h2 class="h2">Start a conversation</h2>
+      <p class="ask">If one of these four problems is yours, or sits in your portfolio, let’s talk. Half an hour, and I tell you honestly whether I can help.</p>
+      <a class="addr" id="addr" href="#contact" data-a="connect" data-b="danieleperotti" data-c="com"></a><noscript><span class="addr">connect [at] danieleperotti [dot] com</span></noscript>
+      <script>(function(){var a=document.getElementById("addr"),d=a.dataset,v=d.a+"\u0040"+d.b+"."+d.c;a.textContent=v;a.href="mai"+"lto:"+v;})();</script>
+      <div class="cta-row">
+        <button type="button" class="copy" id="copy">Copy email</button>
+        <a class="li" href="https://www.linkedin.com/in/perottidaniele/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div></div>
+  <p class="bigname" aria-hidden="true"><span>Daniele Perotti</span></p>
+  <div class="foot"><span>Daniele Perotti · Amsterdam</span><button type="button" class="ck-open" id="ck-open">Cookie choice</button></div>
+</footer>
+
+<dialog class="pop" id="part-pop" aria-labelledby="part-title">
+  <div class="pop__in">
+    <button type="button" class="pop__close" aria-label="Close">&times;</button>
+    <span class="tag" id="part-tag"></span>
+    <h3 id="part-title"></h3>
+    <h4>What it means</h4>
+    <p id="part-means"></p>
+    <h4>My proof</h4>
+    <ul class="pop__proof" id="part-proof"></ul>
+    <div class="pop__nav"><button type="button" data-d="-1">← Previous</button><span id="part-count"></span><button type="button" data-d="1">Next →</button></div>
+  </div>
+</dialog>
+<script src="scrollcraft.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var b = document.getElementById('copy'), a = document.getElementById('addr');
+  b.addEventListener('click', function(){
+    function selectIt(){ var r=document.createRange(); r.selectNodeContents(a); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent='Selected: press copy'; }
+    try{ navigator.clipboard.writeText(a.textContent).then(function(){ b.textContent='Copied'; setTimeout(function(){b.textContent='Copy email'},1800); }, selectIt); }catch(err){ selectIt(); }
+  });
+  var marks = [['top','me'],['about','about'],['.motto','problems'],['why','problems'],['problems','problems'],['how','how'],['now','now'],['contact','contact']];
+  var links = document.querySelectorAll('.pill nav a');
+  /* phones and tablets: the Menu button opens the links under the pill; a link, Escape or a tap elsewhere closes it */
+  var pill = document.querySelector('.pill'), mbtn = document.querySelector('.pill__menu');
+  function setMenu(on){ pill.classList.toggle('open', on); mbtn.setAttribute('aria-expanded', on ? 'true' : 'false'); }
+  mbtn.addEventListener('click', function(){ setMenu(!pill.classList.contains('open')); });
+  links.forEach(function(l){ l.addEventListener('click', function(){ setMenu(false); }); });
+  addEventListener('keydown', function(e){ if (e.key === 'Escape' && pill.classList.contains('open')){ setMenu(false); mbtn.focus(); } });
+  addEventListener('click', function(e){ if (!pill.contains(e.target)) setMenu(false); });
+  /* "What I solve" goes to the dark band and plays it: the page glides through the band's hold, so the words light up on
+     their own. Any scroll, touch, click or key hands control straight back to the visitor. */
+  (function(){
+    var sec = document.querySelector('.motto'), band = document.querySelector('.motto__band'); if (!sec || !band) return;
+    var raf = 0; function stop(){ if (raf){ cancelAnimationFrame(raf); raf = 0; } }
+    ['wheel','touchstart','keydown','mousedown'].forEach(function(ev){ addEventListener(ev, stop, {passive:true}); });
+    function glide(to, ms, done){
+      var from = scrollY, t0 = performance.now();
+      function step(now){ var k = Math.min(1, (now - t0) / ms), e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; scrollTo({top: from + (to - from) * e, behavior:'instant'}); if (k < 1) raf = requestAnimationFrame(step); else { raf = 0; if (done) done(); } }
+      raf = requestAnimationFrame(step);
+    }
+    [].forEach.call(document.querySelectorAll('a[href="#solve"]'), function(a){ a.addEventListener('click', function(e){
+      e.preventDefault(); stop(); history.replaceState(null, '', '#solve');
+      var top = Math.max(0, (innerHeight - band.offsetHeight) / 2), start = sec.getBoundingClientRect().top + scrollY - top, end = start + (sec.offsetHeight - band.offsetHeight) * .96;
+      if (reduce){ scrollTo({top:end, behavior:'instant'}); return; }
+      glide(start, 700, function(){ glide(end, 3000); });
+    }); });
+  })();
+  function onScroll(){
+    document.body.classList.toggle('at-top', scrollY < 20);
+    var mid = innerHeight * .4, cur = '';
+    marks.forEach(function(m){ var el = m[0].charAt(0) === '.' ? document.querySelector(m[0]) : document.getElementById(m[0]); if (el && el.getBoundingClientRect().top <= mid) cur = m[1]; });
+    links.forEach(function(l){ l.setAttribute('aria-current', l.getAttribute('data-nav') === cur ? 'true' : 'false'); });
+    pill.querySelector('.me').setAttribute('aria-current', cur === 'me' ? 'true' : 'false');
+  }
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  var heroBtn = document.querySelector('.hero__col .btn');
+  if (heroBtn && 'IntersectionObserver' in window) new IntersectionObserver(function(es){ document.body.classList.toggle('hero-cta', es[0].isIntersecting); }, {rootMargin:'0px'}).observe(heroBtn);
+
+  // The motto's picture: points of light that start scattered and gather into lines running to a light on the horizon.
+  (function(){
+    var cv = document.getElementById('horizon'); if (!cv) return;
+    var sec = cv.parentElement, ctx = cv.getContext('2d'), dpr = Math.min(devicePixelRatio || 1, 2), W = 0, H = 0, pts = [], rays = [], vis = false;
+    var seed = 7; function rnd(){ seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+    function build(){
+      var r = sec.getBoundingClientRect(); W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var narrow = W < 760, vx = narrow ? W * .7 : W * .76, vy = H * .4, lines = 13, per = 18; pts = []; rays = []; seed = 7;
+      for (var l = 0; l < lines; l++){
+        var a = (l / (lines - 1) - .5);                       // spread of the lines across the bottom edge
+        var bx = vx + a * W * (narrow ? 1.6 : 1.35), by = H * 1.08; rays.push({bx:bx, by:by});
+        for (var k = 0; k < per; k++){
+          var f = Math.pow(k / per, 1.7);                     // perspective: closer together near the horizon
+          pts.push({ ex: bx + (vx - bx) * f, ey: by + (vy - by) * f, sx: rnd() * W, sy: rnd() * H, r: .8 + (1 - f) * 2.4, ph: rnd() * 6.28, d: rnd() * .25 });
+        }
+      }
+      sec.__v = {vx:vx, vy:vy};
+    }
+    /* progress through the held band: 0 as the band comes up from the bottom, .6 at the end of the hold
+       (the words finish at .5, the drawing at .55), so the whole animation plays while the band is held */
+    var outer = sec.parentElement;
+    function prog(){
+      var r = outer.getBoundingClientRect(), vh = innerHeight, band = sec.offsetHeight, top = Math.max(0, (vh - band) / 2);
+      var q = top - r.top, E = r.height - band, lead = vh * .3;
+      return .05 + .55 * Math.max(0, Math.min(1, (q + lead) / (E + lead)));
+    }
+    function ease(t){ return 1 - Math.pow(1 - t, 3); }
+    var cur = null;
+    var COOL = {a:'160,185,255', b:'110,140,255', c:'47,91,234', d:'142,168,255', e:'200,214,255', f:'170,192,255'}, WARM = {a:'255,208,176', b:'240,150,104', c:'180,83,42', d:'237,165,131', e:'255,226,208', f:'250,200,172'};
+    function draw(time){
+      if (!vis) return;
+      var K = document.body.classList.contains('d-warm') ? WARM : COOL;
+      // the drawn progress trails the real scroll position a little, so a quick flick of the wheel still plays out slowly
+      var target = reduce ? 1 : prog(); cur = cur === null ? target : cur + (target - cur) * .045;
+      if (!reduce) sec.style.setProperty('--mp', cur.toFixed(4));
+      var p = cur, g = sec.__v, base = Math.max(0, Math.min(1, (p - .05) / .5));
+      ctx.clearRect(0, 0, W, H);
+      // the light on the horizon
+      var glow = ease(base), R = 40 + glow * Math.min(W, H) * .42;
+      var grd = ctx.createRadialGradient(g.vx, g.vy, 0, g.vx, g.vy, R);
+      grd.addColorStop(0, 'rgba(' + K.a + ',' + (.18 + glow * .5) + ')'); grd.addColorStop(.25, 'rgba(' + K.b + ',' + (.08 + glow * .18) + ')'); grd.addColorStop(1, 'rgba(' + K.c + ',0)');
+      ctx.fillStyle = grd; ctx.fillRect(0, 0, W, H);
+      ctx.fillStyle = 'rgba(246,245,241,' + (.5 + glow * .5) + ')'; ctx.beginPath(); ctx.arc(g.vx, g.vy, 2 + glow * 3, 0, 6.283); ctx.fill();
+      // the horizon line and the light trails along each line, as the points settle
+      var trail = Math.max(0, (base - .45) / .55);
+      if (trail > 0){
+        var hz = ctx.createLinearGradient(0, g.vy, W, g.vy); hz.addColorStop(0, 'rgba(' + K.d + ',0)'); hz.addColorStop(.5, 'rgba(' + K.d + ',' + (.18 * trail) + ')'); hz.addColorStop(1, 'rgba(' + K.d + ',0)');
+        ctx.strokeStyle = hz; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(0, g.vy); ctx.lineTo(W, g.vy); ctx.stroke();
+        for (var l = 0; l < rays.length; l++){ var r0 = rays[l], lg = ctx.createLinearGradient(r0.bx, r0.by, g.vx, g.vy);
+          lg.addColorStop(0, 'rgba(' + K.d + ',' + (.28 * trail) + ')'); lg.addColorStop(1, 'rgba(' + K.e + ',' + (.05 * trail) + ')');
+          ctx.strokeStyle = lg; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.moveTo(r0.bx, r0.by); ctx.lineTo(g.vx + (r0.bx - g.vx) * (1 - trail), g.vy + (r0.by - g.vy) * (1 - trail)); ctx.stroke(); }
+      }
+      // the points
+      for (var i = 0; i < pts.length; i++){
+        var q = pts[i], t = ease(Math.max(0, Math.min(1, (base - q.d) / (1 - q.d))));
+        var x = q.sx + (q.ex - q.sx) * t, y = q.sy + (q.ey - q.sy) * t;
+        var tw = reduce ? 1 : .65 + .35 * Math.sin(time / 900 + q.ph);
+        ctx.fillStyle = 'rgba(' + (t > .9 ? K.f : '246,245,241') + ',' + ((.22 + t * .55) * tw) + ')';
+        ctx.beginPath(); ctx.arc(x, y, q.r, 0, 6.283); ctx.fill();
+      }
+      if (!reduce) requestAnimationFrame(draw);
+    }
+    build(); addEventListener('resize', function(){ build(); if (reduce) draw(0); });
+    new IntersectionObserver(function(es){ vis = es[0].isIntersecting; if (vis) requestAnimationFrame(draw); }).observe(sec);
+  })();
+})();
+</script>
+<script>
+/* Six highlights: each block rises in as you scroll, one after another.
+   Where the first screen and the grid fit on the screen together (desktop, laptop, tablet),
+   the page holds when the grid reaches the bottom of the screen, with the photo above it,
+   and only moves on once all six are fully in. On a phone (one long column) each block
+   rises in as it comes into view, without holding. */
+(function(){
+  var list = document.querySelector('.numlist'), hero = document.querySelector('.hero'); if (!list || !hero) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var rows = [].slice.call(list.children), sec = list.closest('section');
+  var GAP = 110, SPAN = 180, LEAD = 160, HOLD = 120;   /* px of scroll: between blocks, per block, before the hold starts, after the last block */
+  /* the photo screen and the grid travel as one: wrap them, and add the held scroll after them */
+  var first = document.createElement('div'), stick = document.createElement('div'), spacer = document.createElement('div');
+  stick.className = 'first__stick'; spacer.setAttribute('aria-hidden', 'true');
+  hero.parentNode.insertBefore(first, hero); stick.appendChild(hero); stick.appendChild(sec); first.appendChild(stick); first.appendChild(spacer);
+  var held = false, starts = [], ticking = false;
+  list.classList.add('scroll-lit');
+  function measure(){
+    var vh = innerHeight, h = sec.offsetHeight;
+    held = h + 120 < vh;
+    stick.style.position = held ? 'sticky' : ''; stick.style.top = held ? (vh - stick.offsetHeight) + 'px' : '';
+    spacer.style.height = held ? (5 * GAP + SPAN + HOLD - LEAD) + 'px' : '0px';
+    var prev = -80; starts = rows.map(function(r){ prev = Math.max(prev + 80, r.offsetTop); return prev; });
+  }
+  function paint(){
+    ticking = false;
+    if (held){
+      var q = innerHeight - (first.getBoundingClientRect().top + stick.offsetHeight) + LEAD;   /* scroll since the first block started */
+      rows.forEach(function(r, i){ r.style.setProperty('--lit', Math.max(0, Math.min(1, (q - i * GAP) / SPAN)).toFixed(3)); });
+    } else {
+      var d = innerHeight * .92 - list.getBoundingClientRect().top;
+      rows.forEach(function(r, i){ r.style.setProperty('--lit', Math.max(0, Math.min(1, (d - starts[i]) / 150)).toFixed(3)); });
+    }
+  }
+  function ask(){ if (!ticking){ ticking = true; requestAnimationFrame(paint); } }
+  /* the photo screen is held, so a jump to it would stop mid-hold: links to the top go to the very top */
+  [].forEach.call(document.querySelectorAll('a[href="#top"]'), function(l){ l.addEventListener('click', function(e){ e.preventDefault(); scrollTo({top:0, behavior:'smooth'}); history.replaceState(null, '', '#top'); }); });
+  measure(); paint();
+  addEventListener('scroll', ask, {passive:true});
+  addEventListener('resize', function(){ measure(); ask(); });
+})();
+</script>
+<script>
+/* Four problems: a line drawing per card, in the spirit of verveagency.com's icons.
+   Each one moves with your scroll as the card comes into view, then idles gently.
+   01 a compass needle that swings and settles: where to focus.
+   02 a small moon that keeps coming back around its planet: customers who return.
+   03 cubes stacking into a rising staircase: growth that moves again.
+   04 every line runs to one central dot, then re-wires around a leadership team. */
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function clamp(v){ return v < 0 ? 0 : v > 1 ? 1 : v; }
+  function ease(v){ v = clamp(v); return 1 - Math.pow(1 - v, 3); }
+  function cam(w, h, yaw, tilt, S, ox, oy){
+    var cy = Math.cos(yaw), sy = Math.sin(yaw), ct = Math.cos(tilt), st = Math.sin(tilt), D = 5;
+    return function(x, y, z){
+      var x1 = x * cy + z * sy, z1 = -x * sy + z * cy;
+      var y2 = y * ct - z1 * st, z2 = y * st + z1 * ct, f = D / (D + z2);
+      return [w / 2 + (ox || 0) + x1 * f * S, h / 2 + (oy || 0) - y2 * f * S, z2];
+    };
+  }
+  function path(g, pts, close){ g.beginPath(); pts.forEach(function(q, i){ i ? g.lineTo(q[0], q[1]) : g.moveTo(q[0], q[1]); }); if (close) g.closePath(); }
+  function ring(pr, r, y, n){ var a = []; for (var i = 0; i <= n; i++){ var t = i / n * Math.PI * 2; a.push(pr(Math.cos(t) * r, y, Math.sin(t) * r)); } return a; }
+  /* draw only the parts of a 3D curve that face the viewer (z < 0) */
+  function front(g, pts){ g.beginPath(); var on = false; pts.forEach(function(q){ if (q[2] < .02){ on ? g.lineTo(q[0], q[1]) : g.moveTo(q[0], q[1]); on = true; } else on = false; }); g.stroke(); }
+
+  function compass(g, w, h, p, t, C){
+    var S = Math.min(w, h) * .42, pr = cam(w, h, 0, -.62, S, 0, -h * .075);
+    var top = ring(pr, 1, 0, 72), bot = ring(pr, 1, -.2, 72);
+    g.strokeStyle = C.ink;
+    front(g, bot);
+    var l = pr(-1, 0, 0), r = pr(1, 0, 0), l2 = pr(-1, -.2, 0), r2 = pr(1, -.2, 0);
+    path(g, [l, l2]); g.stroke(); path(g, [r, r2]); g.stroke();
+    path(g, top, true); g.fillStyle = C.bg; g.fill(); g.stroke();
+    path(g, ring(pr, .8, 0, 72), true); g.stroke();
+    for (var k = 0; k < 24; k++){
+      var a = k / 24 * Math.PI * 2, L = k % 6 === 0 ? .62 : .72;
+      path(g, [pr(Math.cos(a) * L, 0, Math.sin(a) * L), pr(Math.cos(a) * .8, 0, Math.sin(a) * .8)]); g.stroke();
+    }
+    var e = ease(p), ph = (t % 5) / 5;
+    /* after it settles, the needle sways gently, and every 5 seconds gets a nudge, swings and settles again */
+    var nudge = reduce ? 0 : ((document.body.classList.contains('d-compass') ? .28 : .6) * Math.exp(-ph * 3.5) * Math.sin(ph * 22) + .16 * Math.sin(t * 1.3)) * e;
+    var ang = .95 + 2.8 * Math.pow(1 - e, 1.4) * Math.cos(p * 11) + nudge;
+    var dx = Math.cos(ang), dz = Math.sin(ang), px = -dz, pz = dx, y = .05;
+    var tip = pr(dx * .7, y, dz * .7), tail = pr(-dx * .7, y, -dz * .7), s1 = pr(px * .11, y, pz * .11), s2 = pr(-px * .11, y, -pz * .11);
+    path(g, [tip, s1, s2], true); g.fillStyle = C.acc; g.fill(); g.strokeStyle = C.acc; g.stroke();
+    path(g, [tail, s1, s2], true); g.fillStyle = C.bg; g.fill(); g.strokeStyle = C.ink; g.stroke();
+    var c = pr(0, y, 0); g.beginPath(); g.arc(c[0], c[1], 2.6, 0, 7); g.fillStyle = C.ink; g.fill();
+  }
+
+  function orbit(g, w, h, p, t, C){
+    var S = Math.min(w, h) * .27, sph = cam(w, h, t * .35, .32, S), orb = cam(w, h, 0, .3, S);
+    var roll = -.32, cr = Math.cos(roll), sr = Math.sin(roll);
+    function op(a, R){ var x = Math.cos(a) * R, z = Math.sin(a) * R; return orb(x * cr, x * sr, z); }
+    var pts = []; for (var i = 0; i <= 120; i++) pts.push(op(i / 120 * Math.PI * 2, 1.75));
+    var A = p * Math.PI * 2.2 + t * .7, trail = [];
+    for (var j = 0; j <= 24; j++) trail.push(op(A - j / 24 * 1.6, 1.75));
+    function layer(back){
+      g.strokeStyle = C.ink; g.globalAlpha = back ? .55 : 1;
+      g.beginPath(); var on = false; pts.forEach(function(q){ if ((q[2] > 0) === back){ on ? g.lineTo(q[0], q[1]) : g.moveTo(q[0], q[1]); on = true; } else on = false; }); g.stroke();
+      g.globalAlpha = 1; g.strokeStyle = C.acc; g.lineWidth = 2.2;
+      for (var k = 0; k < 24; k++){ if ((trail[k][2] > 0) !== back) continue; g.globalAlpha = (1 - k / 24) * (back ? .5 : 1); path(g, [trail[k], trail[k + 1]]); g.stroke(); }
+      g.globalAlpha = 1; g.lineWidth = 1.4;
+      var m = op(A, 1.75); if ((m[2] > 0) === back){ g.beginPath(); g.arc(m[0], m[1], 4.2, 0, 7); g.fillStyle = C.acc; g.fill(); }
+    }
+    layer(true);
+    var c = sph(0, 0, 0); g.beginPath(); g.arc(c[0], c[1], S * .985, 0, 7); g.fillStyle = C.bg; g.fill(); g.strokeStyle = C.ink; g.stroke();
+    for (var m2 = 0; m2 < 4; m2++){
+      var phi = m2 / 4 * Math.PI, mer = [];
+      for (var q = 0; q <= 60; q++){ var th = q / 60 * Math.PI * 2; mer.push(sph(Math.sin(th) * Math.cos(phi), Math.cos(th), Math.sin(th) * Math.sin(phi))); }
+      front(g, mer);
+    }
+    [-.5, 0, .5].forEach(function(y){ front(g, ring(sph, Math.sqrt(1 - y * y), y, 60)); });
+    layer(false);
+  }
+
+  function growth(g, w, h, p, t, C){
+    var u = Math.min(w, h) / 7.4, cx = w / 2 - 1.5 * .866 * u - (w < 180 ? 20 : 0), cy = h / 2;   /* centred on the title's line; on a phone, where the drawing sits above the title, pulled left to start where the others do */
+    function P(x, y, z){ return [cx + (x - z) * .866 * u, cy + (x + z) * .5 * u - y * u]; }
+    var cubes = []; for (var c = 0; c < 4; c++) for (var k = 0; k <= c; k++) cubes.push([c, k]);
+    var N = cubes.length;
+    /* the lit cube climbs the four steps, one after another, and never stops: the same always-on idea as the other three drawings */
+    var cols = 0; cubes.forEach(function(cb, i){ if (cb[1] === cb[0] && p > i / N * .8) cols = cb[0] + 1; });   /* steps built so far: the climb stays on those */
+    var ph = reduce ? 3.5 : (t * .62) % Math.max(cols, 1), act = Math.floor(ph), fr = ph - act;
+    cubes.forEach(function(cb, i){
+      var st = i / N * .8, e = ease((p - st) / .2); if (e <= 0) return;
+      var last = cb[1] === cb[0] && cb[0] === act, x = cb[0], y = cb[1] + (1 - e) * 1.4 + (last && !reduce ? .36 * Math.sin(Math.PI * fr) : 0), z = 0;
+      g.globalAlpha = e;
+      var topF = [P(x, y + 1, z), P(x + 1, y + 1, z), P(x + 1, y + 1, z + 1), P(x, y + 1, z + 1)];
+      var xF = [P(x + 1, y, z), P(x + 1, y + 1, z), P(x + 1, y + 1, z + 1), P(x + 1, y, z + 1)];
+      var zF = [P(x, y, z + 1), P(x + 1, y, z + 1), P(x + 1, y + 1, z + 1), P(x, y + 1, z + 1)];
+      [zF, xF, topF].forEach(function(f, n){
+        path(g, f, true); g.fillStyle = C.bg; g.fill();
+        if (last && n === 2){ g.fillStyle = C.accSoft; g.fill(); }
+        g.strokeStyle = last ? C.acc : C.ink; g.stroke();
+      });
+    });
+    g.globalAlpha = 1;
+  }
+
+  function org(g, w, h, p, t, C){
+    var S = Math.min(w, h) * .4, pr = cam(w, h, t * .22 + .3, .95, S, 0, h * .03), e = ease(p), D2R = Math.PI / 180;
+    var hub = pr(0, 0, 0), leaders = [], outers = [];
+    for (var k = 0; k < 3; k++){ var a = (90 + 120 * k) * D2R, r = 1 - .5 * e; leaders.push(pr(Math.cos(a) * r, 0, Math.sin(a) * r)); }
+    for (var j = 0; j < 6; j++){ var b = 60 * j * D2R; outers.push(pr(Math.cos(b), 0, Math.sin(b))); }
+    var near = [[1, 2], [3, 4], [5, 0]];
+    function line(a, b, alpha, col){ if (alpha <= .01) return; g.globalAlpha = alpha; g.strokeStyle = col || C.ink; path(g, [a, b]); g.stroke(); }
+    outers.forEach(function(o){ line(hub, o, 1 - e, C.acc); });
+    leaders.forEach(function(L, i){
+      line(hub, L, 1, e > .5 ? C.ink : C.acc);
+      line(L, leaders[(i + 1) % 3], e, C.acc);
+      near[i].forEach(function(n){ line(L, outers[n], e); });
+    });
+    g.globalAlpha = 1;
+    function dot(q, r, col){ g.beginPath(); g.arc(q[0], q[1], r + 2, 0, 7); g.fillStyle = C.bg; g.fill(); g.beginPath(); g.arc(q[0], q[1], r, 0, 7); g.fillStyle = col; g.fill(); }
+    outers.forEach(function(o){ dot(o, 3, C.ink); });
+    leaders.forEach(function(L){ dot(L, 3 + 1.4 * e, e > .5 ? C.acc : C.ink); });
+    dot(hub, 6 - 2.4 * e, e > .5 ? C.ink : C.acc);
+  }
+
+  var draws = { p1: compass, p2: orbit, p3: growth, p4: org }, items = [];
+  [].forEach.call(document.querySelectorAll('#problems .cell'), function(cell){
+    if (!draws[cell.id]) return;
+    var c = document.createElement('canvas'); c.className = 'ico'; c.setAttribute('aria-hidden', 'true');
+    var head = cell.querySelector('.cell__head') || cell; head.insertBefore(c, head.firstChild);
+    items.push({ cell: cell, c: c, g: c.getContext('2d'), fn: draws[cell.id], vis: false });
+  });
+  function size(){ var d = Math.min(2, devicePixelRatio || 1); items.forEach(function(it){ var r = it.c.getBoundingClientRect(); it.w = r.width; it.h = r.height; it.c.width = Math.round(r.width * d); it.c.height = Math.round(r.height * d); it.g.setTransform(d, 0, 0, d, 0, 0); }); }
+  function prog(it){ if (reduce) return 1; var r = it.cell.getBoundingClientRect(); return clamp((innerHeight * .95 - r.top) / (innerHeight * .55)); }
+  var root = document.documentElement, pending = false;
+  function frame(time){
+    pending = false; var any = false, acc = getComputedStyle(root).getPropertyValue('--accent').trim() || '#2F5BEA';
+    items.forEach(function(it){
+      if (!it.vis) return; any = true;
+      var cs = getComputedStyle(it.cell), g = it.g;
+      var C = { ink: cs.color, bg: cs.backgroundColor, acc: acc, accSoft: 'color-mix(in oklab, ' + acc + ' 16%, transparent)' };
+      g.clearRect(0, 0, it.w, it.h); g.lineWidth = 1.4; g.lineJoin = 'round'; g.lineCap = 'round';
+      /* the opening (needle settling, steps building, network re-wiring) runs once on a timer, started when the drawing has scrolled into view */
+      if (it.t0 == null && prog(it) > .15) it.t0 = time;
+      var p = reduce ? 1 : it.t0 == null ? 0 : clamp((time - it.t0) / 1600);
+      it.c.dataset.p = p.toFixed(2);
+      it.fn(g, it.w, it.h, p, reduce ? 0 : time / 1000, C);
+    });
+    if (any && !reduce) kick();
+  }
+  function kick(){ if (!pending){ pending = true; requestAnimationFrame(frame); } }
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ items.forEach(function(it){ if (it.cell === e.target) it.vis = e.isIntersecting; }); }); kick(); });
+  items.forEach(function(it){ io.observe(it.cell); });
+  size(); addEventListener('resize', function(){ size(); kick(); });
+})();
+</script>
+<script>
+/* The five parts of each problem open a pop-up: what it means, and the proof.
+   Words from dani-perotti-positioning.html (Dani_OS/projects/consulting), the table "The need / What it means / My proof". */
+(function(){
+  var PARTS = {
+ "1.1": {
+  "means": "An honest diagnosis before any new plan: which customers, products and markets make the money, where it leaks, how much change the team can really absorb, and what comes first: the risks that threaten the company, then the core business, then new products, then the foundations.",
+  "proof": "Booking.com Attractions, taken over during COVID: reassessed, then moved from signing suppliers one by one to partnerships with TUI Musement, Viator and Klook, in seven months. Global Fashion Group: Jabong's operating model moved from just-in-time supply to drop-shipping."
+ },
+ "1.2": {
+  "means": "A vision and a North Star the whole company can see, a mission and values people actually use in hiring, onboarding and hard calls, and one company story told the same way to investors, new hires and the team.",
+  "proof": "The two businesses I co-own, a Sense of Place, a listening bar and café in Amsterdam, and Masseria Palmita, a boutique hospitality project in Puglia."
+ },
+ "1.3": {
+  "means": "A new business built beside the core, using what the core already has (customers, brand, supply, distribution), with the problem and the solution tested before the real money goes in.",
+  "proof": "Zalora's marketplace, built from zero in five months beside its retail business, reaching 17.5% of regional net merchandise value by the end of 2015. Booking.com: four new businesses incubated, Flights, Events, Ground Transport and In-stay Services; the hotel extras platform reached €24M revenue and 4.8M transactions. I guide teams through the whole cycle, from idea and validation to first product and launch, with frameworks of my own."
+ },
+ "1.4": {
+  "means": "A three-year plan with its financial model and what needs to be true, broken into 6- and 12-month plans. Every team knows what the strategy asks of it this quarter, and how its work connects to the others'. That means goals and owners per team, progress everyone can see, priorities adjusted as things change, and decisions kept with their reasons.",
+  "proof": "Zalora: the marketplace's strategy, operating model and organization defined from scratch. Booking.com: Connected Trip's frameworks became the frameworks the whole product community works with."
+ },
+ "1.5": {
+  "means": "Deciding where the effort goes, for example most of it on the core, some on emerging products and a little on future bets, and the few numbers that show whether it is working: one main metric everyone steers by, the early signals beneath it, and a review rhythm that acts on them.",
+  "proof": "Booking.com: the company's strongest-ever cross-sell results, with cross-sell volumes up five times. Zalora: the marketplace tracked on delivery time (under 4 days) and seller handling time (under 1.5 days)."
+ },
+ "2.1": {
+  "means": "A live picture of competitors that product and sales share: what they launch, how they price, where they win, so gaps are found by research rather than by losing deals.",
+  "proof": "Rocket Internet: new e-commerce ventures validated against their markets before launch."
+ },
+ "2.2": {
+  "means": "Knowing what customers need and why they stay or leave: which customers are at risk before they go, read from usage, service and payment signals, and the experience fixed before they leave.",
+  "proof": "Zalora: NPS of 81, out-of-stock cancellations under 1%, and returns kept in line with Zalora's own retail and consignment business, at about 12%."
+ },
+ "2.3": {
+  "means": "Where the product is going and why, connected to the roadmap, hiring and customer feedback, and updated when the market moves rather than once a year.",
+  "proof": "One of three co-owners of Connected Trip, the North Star strategy guiding Booking.com's product direction and multi-year investment. Booking.com: the product vision for Attractions, for cross-sell and add-ons across travel verticals, and for the whole post-booking experience, from trip planning to managing the booking."
+ },
+ "2.4": {
+  "means": "How the product reaches the vision this year: the bets, why each one, how success is measured, and the trade-offs made explicit for the whole product team.",
+  "proof": "Booking.com: owned the multi-product experience across cross-sell, add-ons, trip planning and post-booking, and oversaw the white-label Packages platform run in partnership with lastminute.com."
+ },
+ "2.5": {
+  "means": "What the technology can do today, where the gaps are, and what to build or buy, so product only plans what can be built and engineering builds what the product needs.",
+  "proof": "Booking.com: the product architecture behind Connected Trip, adopted across the whole product community."
+ },
+ "3.1": {
+  "means": "More of the right supply, faster. In a marketplace, supply decides whether a search ends in a sale: go after the long tail competitors ignore, onboard partners in days, and keep the terms good enough that they stay.",
+  "proof": "Booking.com Attractions: coverage from 30% to 80%, products from 15k to 100k+, transactions from under 1M to 3M+ a year. Zalora: 4,000+ sellers and 130,000 products live within 12 months; its seller program won Gold for Best Use of Relationship Marketing B2B (Loyalty & Engagement Awards, 2015). Global Fashion Group: 12,000 sellers and 350+ international brands, with onboarding cut from 30 days to 10."
+ },
+ "3.2": {
+  "means": "The customers, channels and message that turn a product into steady demand, and the sales, partnership and marketing engine that repeats it.",
+  "proof": "Booking.com: Ground Transport launched in 13 cities with top suppliers, including NS Dutch Rail; exclusive partnerships secured with Ticketmaster and Etraveli; partner adoption of the hotel extras platform up 80% year on year."
+ },
+ "3.3": {
+  "means": "Taking what works to new countries, one market at a time: the order of entry, local supply and demand built together, and a playbook each country can run on its own.",
+  "proof": "Global Fashion Group: the marketplace rolled out across 6 companies and 27 countries in under a year, and a global partner program launched in 10 markets. Zalora: the marketplace launched across 8 Southeast Asian markets. Rocket Internet: e-commerce ventures launched across emerging markets."
+ },
+ "3.4": {
+  "means": "Margin gains that last because the business works differently, not one-off cuts that hurt service: pricing and mix, cost to serve, supplier terms, and the cash tied up in stock and late payments.",
+  "proof": "Global Fashion Group: marketplace performance more than doubled year on year, and 9.8 points of margin gained over two years by moving shipping costs onto suppliers."
+ },
+ "3.5": {
+  "means": "More output from the same team, and AI spend with a return you can see. AI is aimed at the processes where it saves the most time and cost, and tokens are spent on work that pays back rather than on experiments that go nowhere. People and AI agents work from one shared company memory, with every decision kept alongside its reason. And people get help to actually change how they work.",
+  "proof": "Booking.com: OpenAI-based automation for post-booking customer service, built and deployed, live in production, with structural savings projected. My own AI operating system, built and run daily: one memory of every project and decision, daily and weekly planning, and agents that run recurring work on their own; the same set-up I would put in place inside a company."
+ },
+ "4.1": {
+  "means": "The first leadership team beyond the founder: which roles the company needs next, who fills them, how decisions move from the founder to the team, and senior people spending their time leading rather than assembling information.",
+  "proof": "Booking.com: led a division of 300+ people across product, engineering, design, commercial and operations."
+ },
+ "4.2": {
+  "means": "An organization shaped on purpose rather than by history. The structure follows the strategy. Every team has a written charter (its purpose, scope and way of working), and every role has a clear owner and mandate. The hiring plan is sequenced to the priorities and the budget, so hiring follows the plan instead of the latest departure.",
+  "proof": "Zalora: the marketplace organization designed from zero, a regional team of 10 and 7 country managers each leading about 25 people. Global Fashion Group: a central team of 12 running marketplace operations for the whole group, alongside each company's own team."
+ },
+ "4.3": {
+  "means": "How leaders are expected to decide and behave: a few principles for who decides what and how disagreements get settled, and the behaviors the company rewards and will not tolerate, so the culture holds as the team grows.",
+  "proof": "The teams I have led at Zalora, Global Fashion Group and Booking.com."
+ },
+ "4.4": {
+  "means": "A company that runs without the founder in every decision. A yearly plan learns from last year's bets and sets goals, hiring and budget. Quarterly business reviews check results and reset priorities. Every core process has an owner and a known structure, connected to where the work happens. So nothing depends on one person, nothing is rebuilt from scratch, and every review ends in a decision.",
+  "proof": "Global Fashion Group: one B2B platform and one operating playbook, built from Zalora's, run across 6 companies. Booking.com: an €80M annual promotions portfolio across travel verticals, and a budget of about €50M. My advisory work uses the leadership operating system from Claire Hughes Johnson's Scaling People: founding documents, goals and an operating cadence."
+ },
+ "4.5": {
+  "means": "One set of numbers, drawn from live data, so leaders review the board pack instead of rebuilding it every quarter, and the board sees the same picture as the team.",
+  "proof": "Booking.com: contributed to M&A due diligence for BookingGo. Board adviser to ZYMI, preparing its first investment round."
+ }
+};
+  var dlg = document.getElementById('part-pop'); if (!dlg || !dlg.showModal) return;
+  var $ = function(id){ return document.getElementById(id); }, last = null;
+  var prev = dlg.querySelector('[data-d="-1"]'), next = dlg.querySelector('[data-d="1"]');
+  function sibs(btn){ return [].slice.call(btn.closest('.parts').querySelectorAll('.part')); }
+  /* previous and next stay inside the five needs of one problem */
+  function step(d){ if (!last) return; var l = sibs(last), n = l[l.indexOf(last) + d]; if (!n) return; open(n); var b = d > 0 ? next : prev; (b.disabled ? (d > 0 ? prev : next) : b).focus(); }
+  prev.addEventListener('click', function(){ step(-1); }); next.addEventListener('click', function(){ step(1); });
+  dlg.addEventListener('keydown', function(e){ if (e.key === 'ArrowRight') step(1); else if (e.key === 'ArrowLeft') step(-1); });
+  function esc(t){ return t.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  function open(btn){
+    var d = PARTS[btn.dataset.n]; if (!d) return;
+    last = btn;
+    $('part-tag').textContent = btn.dataset.tag;
+    $('part-title').textContent = btn.textContent;
+    $('part-means').textContent = d.means;
+    /* the proof, one point per sentence, the company in bold */
+    $('part-proof').innerHTML = d.proof.split(/(?<=\.)\s+(?=[A-Z])/).map(function(t){
+      var m = t.match(/^([^:]{2,60}):\s(.*)$/);
+      return '<li>' + (m ? '<b>' + esc(m[1]) + ':</b> ' + esc(m[2]) : esc(t)) + '</li>';
+    }).join('');
+    var l = sibs(btn), i = l.indexOf(btn);
+    $('part-count').textContent = (i + 1) + ' of ' + l.length; prev.disabled = i <= 0; next.disabled = i >= l.length - 1;
+    if (!dlg.open){ dlg.showModal(); document.documentElement.style.overflow = 'hidden'; dlg.querySelector('.pop__close').focus(); }
+    dlg.scrollTop = 0;
+  }
+  dlg.addEventListener('close', function(){ document.documentElement.style.overflow = ''; if (last) last.focus(); });
+  dlg.querySelector('.pop__close').addEventListener('click', function(){ dlg.close(); });
+  dlg.addEventListener('click', function(e){ if (e.target === dlg) dlg.close(); });
+  [].forEach.call(document.querySelectorAll('#problems .cell'), function(cell, ci){
+    var tag = cell.querySelector(':scope > .tag').textContent;
+    [].forEach.call(cell.querySelectorAll('.parts li'), function(li, j){
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'part'; b.setAttribute('aria-haspopup', 'dialog');
+      b.dataset.n = (ci + 1) + '.' + (j + 1); b.dataset.tag = tag;
+      while (li.firstChild) b.appendChild(li.firstChild);
+      li.appendChild(b);
+      b.addEventListener('click', function(){ open(b); });
+    });
+  });
+})();
+</script>
+
+<div class="topfade" aria-hidden="true"></div>
+<script>
+(function(){
+  var bs = [].slice.call(document.querySelectorAll('.theme')), root = document.documentElement; if (!bs.length) return;
+  function isDark(){ var t = root.getAttribute('data-theme'); return t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches; }
+  function label(){ bs.forEach(function(b){ var l = b.querySelector('.lbl'); if (l) l.textContent = isDark() ? 'Light version' : 'Dark version'; else b.setAttribute('aria-label', isDark() ? 'Switch to light version' : 'Switch to dark version'); }); }
+  bs.forEach(function(b){ b.addEventListener('click', function(){ var next = isDark() ? 'light' : 'dark'; root.setAttribute('data-theme', next); try { localStorage.setItem('dp-theme', next); } catch (e) {} label(); window.dispatchEvent(new Event('resize')); }); });
+  label();
+})();
+</script>
+<script>
+/* heading marks draw every time the heading comes into view, and reset once it has left the screen */
+[].forEach.call(document.querySelectorAll('#why .h2, #problems .h2, .prom h3'), function(h){
+  if (!('IntersectionObserver' in window)) { h.classList.add('seen'); return; }
+  new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) h.classList.add('seen'); }); }, { threshold:.9, rootMargin:'0px 0px -22% 0px' }).observe(h);
+  new IntersectionObserver(function(es){ es.forEach(function(e){ if (!e.isIntersecting) h.classList.remove('seen'); }); }, { threshold:0 }).observe(h);
+});
+</script>
+
+<script>
+/* "How we work": the three steps hold still on a laptop while you scroll through them, and one step is lit at a time */
+(function(){
+  var seq = document.querySelector('.seq'); if (!seq) return;
+  var lis = [].slice.call(seq.querySelectorAll('li'));
+  var pinw = document.createElement('div'); pinw.className = 'seqpin'; seq.parentNode.insertBefore(pinw, seq); pinw.appendChild(seq);
+  var pinned = false, pt = 0, travel = 1;
+  var setup = function(){ pinw.classList.remove('pin'); var h = seq.offsetHeight; pinned = innerWidth > 900 && h + 200 < innerHeight && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (pinned){ pt = Math.max(130, (innerHeight - h) / 2); travel = innerHeight * 2; pinw.style.setProperty('--pt', pt + 'px'); pinw.style.setProperty('--ph', (h + travel) + 'px'); pinw.classList.add('pin'); } };
+  var pick = function(){ var cur = -1, all = false;
+    if (pinned){ var top = pinw.getBoundingClientRect().top; if (top < innerHeight * .7) { var ph = Math.max(0, Math.floor((pt - top) / travel * 4)); cur = Math.min(2, ph); all = ph >= 3; } }
+    else { var line = innerHeight * .58; lis.forEach(function(l, i){ if (l.getBoundingClientRect().top < line) cur = i; }); all = cur === 2 && lis[2].getBoundingClientRect().top < innerHeight * .28; }
+    lis.forEach(function(l, i){ l.classList.toggle('on', i === cur); }); seq.classList.toggle('all', all); };
+  addEventListener('scroll', pick, { passive:true }); addEventListener('resize', function(){ setup(); pick(); }); setup(); pick();
+})();
+</script>
+<script>
+(function(){ var b = document.querySelector('.brk'); if (!b) return; if (!('IntersectionObserver' in window)) { b.classList.add('in'); return; }
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { b.classList.add('in'); io.disconnect(); } }); }, { threshold:.9, rootMargin:'0px 0px -22% 0px' }); io.observe(b); })();
+</script>
+
+<style>
+  .ck{position:fixed; left:0; right:0; bottom:0; z-index:90; background:#0E1320; color:#F6F5F1; border-top:1px solid rgba(246,245,241,.16);
+    padding:14px var(--gut); display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:10px 22px; font-size:14px; line-height:1.45}
+  .ck[hidden]{display:none}
+  .ck p{max-width:62ch; color:rgba(246,245,241,.84)}
+  .ck div{display:flex; gap:10px}
+  .ck button{font:inherit; font-weight:500; line-height:1; color:#F6F5F1; background:transparent; border:1px solid rgba(246,245,241,.5); border-radius:999px; padding:10px 18px; cursor:pointer}
+  .ck button:hover{border-color:#CF6D40; color:#CF6D40}
+  .ck button:focus-visible{outline:2px solid #CF6D40; outline-offset:2px}
+  .ck-open{font:inherit; color:inherit; background:none; border:0; padding:0; margin-left:18px; cursor:pointer; text-decoration:underline; text-underline-offset:3px}
+</style>
+<div class="ck" id="ck" role="region" aria-label="Cookie choice" hidden>
+  <p>May this site use Google Analytics cookies to count visits and see which parts are read? Nothing else is collected.</p>
+  <div><button type="button" data-ck="no">Decline</button><button type="button" data-ck="yes">Accept</button></div>
+</div>
+<script>
+(function(){
+  var GA_ID = '', KEY = 'dp-consent', strip = document.getElementById('ck');
+  function get(){ try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function set(v){ try { localStorage.setItem(KEY, v); } catch (e) {} }
+  function loadGA(){
+    if (!GA_ID || window.gtag) return;
+    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date()); gtag('config', GA_ID);
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID; document.head.appendChild(s);
+  }
+  function track(name, how){ if (window.gtag) gtag('event', name, { method: how }); }
+  var choice = get();
+  if (choice === 'yes') loadGA(); else if (choice !== 'no') strip.hidden = false;
+  strip.addEventListener('click', function(e){
+    var v = e.target.getAttribute && e.target.getAttribute('data-ck'); if (!v) return;
+    var was = get(); set(v); strip.hidden = true;
+    if (v === 'yes') loadGA(); else if (was === 'yes') location.reload();
+  });
+  document.getElementById('ck-open').addEventListener('click', function(){ strip.hidden = false; });
+  document.getElementById('addr').addEventListener('click', function(){ track('contact', 'email link'); });
+  document.getElementById('copy').addEventListener('click', function(){ track('contact', 'copy email'); });
+  document.querySelector('#contact .li').addEventListener('click', function(){ track('contact', 'linkedin'); });
+})();
+</script>
+</body>
+</html>
