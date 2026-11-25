@@ -1433,13 +1433,32 @@
     gtag('js', new Date());  // Google's own install snippet (Nov 2026): gtm.js with the G- ID, no config call
     var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GA_ID; document.head.appendChild(s);
   }
-  function track(name, how){ if (window.gtag) gtag('event', name, { method: how }); }
+  // events wait in a local list until the visitor accepts; after a decline nothing is kept or sent
+  var q = [];
+  function ev(name, p){ if (window.gtag) gtag('event', name, p || {}); else if (get() !== 'no' && q.length < 60) q.push([name, p || {}]); }
+  function flush(){ while (q.length) { var e = q.shift(); gtag('event', e[0], e[1]); } }
+  function track(name, how){ ev(name, { method: how }); }
+  function txt(el){ return (el.textContent || '').replace(/\s+/g, ' ').trim(); }
   var choice = get();
   if (choice === 'yes') loadGA(); else if (choice !== 'no') strip.hidden = false;
+  document.addEventListener('click', function(e){
+    var t = e.target.closest && e.target.closest('a,button'); if (!t) return;
+    var href = t.getAttribute('href') || '';
+    if (t.classList.contains('part')) return ev('problem_open', { problem: txt(t), area: t.dataset.tag || '' });
+    if (t.closest('.pop__nav')) return setTimeout(function(){ ev('problem_browse', { problem: txt(document.getElementById('part-title')), direction: t.dataset.d === '1' ? 'next' : 'previous' }); }, 0);
+    if (t.classList.contains('theme')) return setTimeout(function(){ ev('theme_switch', { theme: document.documentElement.getAttribute('data-theme') || '' }); }, 0);
+    if (/^#p[1-4]$/.test(href)) return ev('area_click', { area: txt(t).replace(/^\d+\s*/, '') });
+    if (t.classList.contains('btn') && href === '#contact') return ev('cta_click', { place: t.closest('.pill') ? 'top bar' : 'opening screen' });
+    if (t.closest('.pill') && href.charAt(0) === '#') return ev('menu_click', { item: txt(t) });
+  }, true);
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(x){ if (x.isIntersecting) { io.unobserve(x.target); ev('section_seen', { section: x.target.id }); } }); }, { rootMargin: '-20% 0px -50% 0px' }  /* seen = part of the section is in the upper middle of the screen */);
+    document.querySelectorAll('section[id], #contact').forEach(function(el){ io.observe(el); });
+  }
   strip.addEventListener('click', function(e){
     var v = e.target.getAttribute && e.target.getAttribute('data-ck'); if (!v) return;
     var was = get(); set(v); strip.hidden = true;
-    if (v === 'yes') loadGA(); else if (was === 'yes') location.reload();
+    if (v === 'yes') { loadGA(); flush(); } else { q = []; if (was === 'yes') location.reload(); }
   });
   document.getElementById('ck-open').addEventListener('click', function(){ strip.hidden = false; });
   document.getElementById('addr').addEventListener('click', function(){ track('contact', 'email link'); });
