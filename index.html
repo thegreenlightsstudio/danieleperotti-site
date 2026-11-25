@@ -1424,14 +1424,14 @@
 </div>
 <script>
 (function(){
-  var GA_ID = '', KEY = 'dp-consent', strip = document.getElementById('ck');
+  var GA_ID = 'G-WH2BK8G7EJ', KEY = 'dp-consent', strip = document.getElementById('ck');
   function get(){ try { return localStorage.getItem(KEY); } catch (e) { return null; } }
   function set(v){ try { localStorage.setItem(KEY, v); } catch (e) {} }
   function loadGA(){
     if (!GA_ID || window.gtag) return;
     window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date()); gtag('config', GA_ID);
-    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID; document.head.appendChild(s);
+    gtag('js', new Date());  // Google's own install snippet (Nov 2026): gtm.js with the G- ID, no config call
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GA_ID; document.head.appendChild(s);
   }
   function track(name, how){ if (window.gtag) gtag('event', name, { method: how }); }
   var choice = get();
