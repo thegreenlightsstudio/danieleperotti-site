@@ -741,6 +741,13 @@
   @media (max-width:900px){ .gets, body.h-a .gets{grid-template-columns:1fr; gap:16px} .gets h3{max-width:none} }
 </style>
 <script>try{var t=localStorage.getItem('dp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<script>
+
+try { var nav = performance.getEntriesByType('navigation')[0];
+  if (nav && nav.type === 'reload' && !location.hash) { history.scrollRestoration = 'manual'; scrollTo(0, 0); }
+  else history.scrollRestoration = 'auto';
+} catch (e) {}
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfilePage", "url": "https://www.danieleperotti.com/", "dateCreated": "2026-11-25", "dateModified": "2026-11-26", "isPartOf": {"@type": "WebSite", "name": "Daniele Perotti", "url": "https://www.danieleperotti.com/"}, "mainEntity": {"@type": "Person", "name": "Daniele Perotti", "alternateName": "Dani Perotti", "jobTitle": "Builder and Operator", "description": "Daniele Perotti helps ambitious companies with what they need next: capturing new sources of growth, turning strategy into delivery, and building the leadership team to run it.", "alumniOf": [{"@type": "Organization", "name": "Booking.com"}, {"@type": "Organization", "name": "Zalora"}, {"@type": "Organization", "name": "Global Fashion Group"}, {"@type": "Organization", "name": "Rocket Internet"}], "affiliation": [{"@type": "Organization", "name": "Antler"}, {"@type": "Organization", "name": "a Sense of Place"}, {"@type": "Organization", "name": "Tales Tensor"}, {"@type": "Organization", "name": "ZYMI"}], "knowsAbout": ["Strategy and transformation", "Product experience and customer centricity", "Growth and profitability", "Organization design and governance", "Marketplaces", "AI in company operations"], "url": "https://www.danieleperotti.com/", "image": "https://www.danieleperotti.com/assets/portrait.jpg", "sameAs": ["https://www.linkedin.com/in/perottidaniele/"], "homeLocation": {"@type": "City", "name": "Amsterdam"}}}</script>
 <style>
   .no-sc [data-sc-in], .no-sc [data-sc-stagger]>*, .no-sc body .seq h3, .no-sc body .seq .tx{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
