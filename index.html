@@ -420,6 +420,14 @@
   .addr{margin-top:clamp(36px, 4vw, 56px)}
   .cta-row{margin-top:22px}
   .nb{white-space:nowrap}
+  
+  @media (min-height:1100px){ .motto{--band:clamp(460px, 66svh, 1400px)} }
+  @media (min-width:1001px) and (max-aspect-ratio:1/1){
+    html body .hero__col{width:min(47%, 640px)}
+    html body.d-scale .hero__name{font-size:clamp(2.6rem, 1rem + 4.4vw, 4.4rem)}
+    html body .hero__go{gap:12px 16px}
+    .hero__photo{left:34%; -webkit-mask-image:linear-gradient(90deg, transparent 0, rgba(0,0,0,.5) 22%, #000 46%); mask-image:linear-gradient(90deg, transparent 0, rgba(0,0,0,.5) 22%, #000 46%)}
+  }
   html body .prom__big .s + .s{margin-top:1.1em}
   .pidx{display:none}
   @media (max-width:900px){
@@ -1371,7 +1379,7 @@
   var lis = [].slice.call(seq.querySelectorAll('li'));
   var pinw = document.createElement('div'); pinw.className = 'seqpin'; seq.parentNode.insertBefore(pinw, seq); pinw.appendChild(seq);
   var pinned = false, pt = 0, travel = 1;
-  var setup = function(){ pinw.classList.remove('pin'); var h = seq.offsetHeight; pinned = innerWidth > 900 && h + 200 < innerHeight && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var setup = function(){ pinw.classList.remove('pin'); var h = seq.offsetHeight; pinned = innerWidth > 900 && innerHeight <= 1150 && h + 200 < innerHeight && !matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (pinned){ pt = Math.max(130, (innerHeight - h) / 2); travel = innerHeight * 2; pinw.style.setProperty('--pt', pt + 'px'); pinw.style.setProperty('--ph', (h + travel) + 'px'); pinw.classList.add('pin'); } };
   var pick = function(){ var cur = -1, all = false;
     if (pinned){ var top = pinw.getBoundingClientRect().top; if (top < innerHeight * .7) { var ph = Math.max(0, Math.floor((pt - top) / travel * 4)); cur = Math.min(2, ph); all = ph >= 3; } }
