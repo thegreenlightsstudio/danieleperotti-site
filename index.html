@@ -422,6 +422,10 @@
   .nb{white-space:nowrap}
   
   @media (min-height:1100px){ .motto{--band:clamp(460px, 66svh, 1400px)} }
+  @media (min-width:601px) and (max-width:1000px){
+    .hero__shade{background:linear-gradient(0deg, rgba(14,19,32,.97) 0%, rgba(14,19,32,.93) 56%, rgba(14,19,32,.55) 70%, rgba(14,19,32,.08) 86%)}
+    html body .hero__col{width:min(560px, 100%)}
+  }
   @media (min-width:1001px) and (max-aspect-ratio:1/1){
     html body .hero__col{width:min(47%, 640px)}
     html body.d-scale .hero__name{font-size:clamp(2.6rem, 1rem + 4.4vw, 4.4rem)}
