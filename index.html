@@ -290,7 +290,7 @@
 
   
   :root{--sans:"Geist", "Helvetica Neue", Arial, sans-serif; --mono:"Geist Mono", ui-monospace, monospace;
-    --accent:#B4532A; --accent-on-dark:#CF6D40;   
+    --accent:#AD4F27; --accent-on-dark:#CF6D40;   
     --h2:clamp(2.3rem, 1.2rem + 3.4vw, 4.4rem); --h3:clamp(1.2rem, 1.05rem + .5vw, 1.5rem); --lead:clamp(1.06rem, 1rem + .3vw, 1.22rem)}
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--accent:#CF6D40} }
   :root[data-theme="dark"]{--accent:#CF6D40}
@@ -466,6 +466,8 @@
   .pill .theme:hover{color:var(--ink); background:rgba(20,24,33,.06)}
   .pill .theme:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
   .pill .theme svg{display:block; width:20px; height:20px}
+  .pill .theme, .pill__menu, .pill > .btn{position:relative}
+  .pill .theme::after, .pill__menu::after, .pill > .btn::after{content:""; position:absolute; inset:-5px}
   .pill .theme .sun{display:none}
   :root[data-theme="dark"] .pill .theme .sun{display:block} :root[data-theme="dark"] .pill .theme .moon{display:none}
   :root[data-theme="dark"] .pill .theme:hover{background:rgba(238,240,244,.1)}
@@ -883,7 +885,7 @@
         <article class="tile"><i class="logo logo--zymi" aria-hidden="true"></i><h3>ZYMI</h3><p class="role">Board adviser</p><p>Organic consumer goods. I advise the founder as the company prepares its first investment round.</p></article>
       </div>
       <figure class="quote now-quote"><blockquote>“He has advised me on crucial operational bottlenecks while ensuring we never lose the human energy that built the company.”</blockquote><figcaption><img class="who-ph" src="assets/rec-melina-giolva.jpg" alt="" width="92" height="92" loading="lazy"><span><b>Melina Giolva</b>, founder and CEO of ZYMI, February 2026</span></figcaption></figure>
-      <figure class="quote now-quote now-quote--draft"><blockquote>“Dani is a natural-born entrepreneur, a man of taste and a great co-founder to partner with. He can always connect the dots and see the big picture, and he gets to depth in a new domain faster than anyone I've worked with.”</blockquote><figcaption><img class="who-ph" src="assets/rec-aj-trouwee.jpg" alt="" width="92" height="92" loading="lazy"><span><b>AJ Trouwee</b>, Principal Product Manager at Booking.com and co-owner of a Sense of Place</span></figcaption></figure>
+      <figure class="quote now-quote"><blockquote>“Dani is a natural-born entrepreneur, a man of taste and a great co-founder to partner with. He can always connect the dots and see the big picture, and he gets to depth in a new domain faster than anyone I've worked with.”</blockquote><figcaption><img class="who-ph" src="assets/rec-aj-trouwee.jpg" alt="" width="92" height="92" loading="lazy"><span><b>AJ Trouwee</b>, Principal Product Manager at Booking.com and co-owner of a Sense of Place</span></figcaption></figure>
     </div>
   </section>
 
@@ -904,7 +906,7 @@
     </div>
   </div></div>
   <p class="bigname" aria-hidden="true"><span>Daniele Perotti</span></p>
-  <div class="foot"><span>Daniele Perotti · Amsterdam</span><button type="button" class="ck-open" id="ck-open">Cookie choice</button></div>
+  <div class="foot"><span>Daniele Perotti · Amsterdam · Perotti Consulting · VAT&nbsp;NL003100937B92</span><button type="button" class="ck-open" id="ck-open">Cookie choice</button></div>
 </footer>
 
 <dialog class="pop" id="part-pop" aria-labelledby="part-title">
@@ -1374,6 +1376,40 @@
 <script>
 (function(){ var b = document.querySelector('.brk'); if (!b) return; if (!('IntersectionObserver' in window)) { b.classList.add('in'); return; }
   var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { b.classList.add('in'); io.disconnect(); } }); }, { threshold:.9, rootMargin:'0px 0px -42% 0px' }); io.observe(b); })();
+</script>
+<script>
+
+(function(){
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || /[?&]wheel=off/.test(location.search)) return;
+  var target = null, pos = 0, raf = 0;
+  function stop(){ if (raf) cancelAnimationFrame(raf); raf = 0; target = null; }
+  function inner(el){
+    for (; el && el !== document.body && el.nodeType === 1; el = el.parentElement){
+      if (el.tagName === 'DIALOG') return true;
+      var o = getComputedStyle(el).overflowY;
+      if ((o === 'auto' || o === 'scroll') && el.scrollHeight > el.clientHeight + 1) return true;
+    }
+    return false;
+  }
+  function step(){
+    var d = target - pos;
+    if (Math.abs(d) < .5){ scrollTo({top: target, behavior: 'instant'}); raf = 0; target = null; return; }
+    pos += d * .16; scrollTo({top: pos, behavior: 'instant'});
+    raf = requestAnimationFrame(step);
+  }
+  addEventListener('wheel', function(e){
+    if (e.ctrlKey || e.metaKey || e.shiftKey || e.deltaX) return;
+    var d = e.deltaY * (e.deltaMode === 1 ? 40 : e.deltaMode === 2 ? innerHeight : 1);
+    if (e.deltaMode === 0 && (Math.abs(d) < 50 || d % 1 !== 0)) { stop(); return; }
+    if (inner(e.target)) return;
+    e.preventDefault();
+    var max = document.documentElement.scrollHeight - innerHeight;
+    if (target == null) pos = target = scrollY;
+    target = Math.max(0, Math.min(max, target + d));
+    if (!raf) raf = requestAnimationFrame(step);
+  }, {passive: false});
+  ['keydown', 'pointerdown', 'touchstart'].forEach(function(n){ addEventListener(n, stop, {passive: true}); });
+})();
 </script>
 
 <style>
