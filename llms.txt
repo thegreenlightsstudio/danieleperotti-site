@@ -35,6 +35,26 @@ It isn't clear where to focus or what to build next, or a new phase is starting 
 - Launching a new line of business
 - Strategy, turned into action
 - Priorities, and how success is measured
+
+#### A clear view of today's business
+What it means: An honest diagnosis before any new plan: which customers, products and markets make the money, where it leaks, how much change the team can really absorb, and what comes first: the risks that threaten the company, then the core business, then new products, then the foundations.
+My proof: Booking.com Attractions, taken over during COVID: reassessed, then moved from signing suppliers one by one to partnerships with TUI Musement, Viator and Klook, in seven months. Global Fashion Group: Jabong's operating model moved from just-in-time supply to drop-shipping.
+
+#### Vision, mission and values
+What it means: A vision and a North Star the whole company can see, a mission and values people actually use in hiring, onboarding and hard calls, and one company story told the same way to investors, new hires and the team.
+My proof: The two businesses I co-own, a Sense of Place, a listening bar and café in Amsterdam, and Masseria Palmita, a boutique hospitality project in Puglia.
+
+#### Launching a new line of business
+What it means: A new business built beside the core, using what the core already has (customers, brand, supply, distribution), with the problem and the solution tested before the real money goes in.
+My proof: Zalora's marketplace, built from zero in five months beside its retail business, reaching 17.5% of regional net merchandise value by the end of 2015. Booking.com: four new businesses incubated, Flights, Events, Ground Transport and In-stay Services; the hotel extras platform reached €24M revenue and 4.8M transactions. I guide teams through the whole cycle, from idea and validation to first product and launch, with frameworks of my own.
+
+#### Strategy, turned into action
+What it means: A three-year plan with its financial model and what needs to be true, broken into 6- and 12-month plans. Every team knows what the strategy asks of it this quarter, and how its work connects to the others'. That means goals and owners per team, progress everyone can see, priorities adjusted as things change, and decisions kept with their reasons.
+My proof: Zalora: the marketplace's strategy, operating model and organization defined from scratch. Booking.com: Connected Trip's frameworks became the frameworks the whole product community works with.
+
+#### Priorities, and how success is measured
+What it means: Deciding where the effort goes, for example most of it on the core, some on emerging products and a little on future bets, and the few numbers that show whether it is working: one main metric everyone steers by, the early signals beneath it, and a review rhythm that acts on them.
+My proof: Booking.com: the company's strongest-ever cross-sell results, with cross-sell volumes up five times. Zalora: the marketplace tracked on delivery time (under 4 days) and seller handling time (under 1.5 days).
 > “Working across functions and markets, Dani held the strategic picture and the operational detail at once, building teams obsessed with high standards and high-paced delivery.”
   Alessandro Durì, co-founder of Pemo. We built drop-shipping across Southeast Asia together at Zalora.
 
@@ -46,6 +66,26 @@ The product is drifting away from its customers. Competitors move first, custome
 - The product vision
 - The product strategy
 - Tech architecture and capabilities
+
+#### Knowing the competition
+What it means: A live picture of competitors that product and sales share: what they launch, how they price, where they win, so gaps are found by research rather than by losing deals.
+My proof: Rocket Internet: new e-commerce ventures validated against their markets before launch.
+
+#### Customer needs: retention and churn
+What it means: Knowing what customers need and why they stay or leave: which customers are at risk before they go, read from usage, service and payment signals, and the experience fixed before they leave.
+My proof: Zalora: NPS of 81, out-of-stock cancellations under 1%, and returns kept in line with Zalora's own retail and consignment business, at about 12%.
+
+#### The product vision
+What it means: Where the product is going and why, connected to the roadmap, hiring and customer feedback, and updated when the market moves rather than once a year.
+My proof: One of three co-owners of Connected Trip, the North Star strategy guiding Booking.com's product direction and multi-year investment. Booking.com: the product vision for Attractions, for cross-sell and add-ons across travel verticals, and for the whole post-booking experience, from trip planning to managing the booking.
+
+#### The product strategy
+What it means: How the product reaches the vision this year: the bets, why each one, how success is measured, and the trade-offs made explicit for the whole product team.
+My proof: Booking.com: owned the multi-product experience across cross-sell, add-ons, trip planning and post-booking, and oversaw the white-label Packages platform run in partnership with lastminute.com.
+
+#### Tech architecture and capabilities
+What it means: What the technology can do today, where the gaps are, and what to build or buy, so product only plans what can be built and engineering builds what the product needs.
+My proof: Booking.com: the product architecture behind Connected Trip, adopted across the whole product community.
 > “The collaboration was a fantastic two year journey that had a huge impact on the direction of the company and the clarity of what we built. Dani continues to be a trusted advisor I can go to for vision and direct feedback.”
   Molly Stevens, Chief Product Officer at Amplify.One. We defined Booking.com's three-year vision together.
 
@@ -57,6 +97,26 @@ Growth has stalled or costs too much. Supply, go-to-market, new markets or margi
 - Expanding internationally
 - Improving margins
 - Efficiency through AI
+
+#### Scaling supply
+What it means: More of the right supply, faster. In a marketplace, supply decides whether a search ends in a sale: go after the long tail competitors ignore, onboard partners in days, and keep the terms good enough that they stay.
+My proof: Booking.com Attractions: coverage from 30% to 80%, products from 15k to 100k+, transactions from under 1M to 3M+ a year. Zalora: 4,000+ sellers and 130,000 products live within 12 months; its seller program won Gold for Best Use of Relationship Marketing B2B (Loyalty & Engagement Awards, 2015). Global Fashion Group: 12,000 sellers and 350+ international brands, with onboarding cut from 30 days to 10.
+
+#### Building the go-to-market
+What it means: The customers, channels and message that turn a product into steady demand, and the sales, partnership and marketing engine that repeats it.
+My proof: Booking.com: Ground Transport launched in 13 cities with top suppliers, including NS Dutch Rail; exclusive partnerships secured with Ticketmaster and Etraveli; partner adoption of the hotel extras platform up 80% year on year.
+
+#### Expanding internationally
+What it means: Taking what works to new countries, one market at a time: the order of entry, local supply and demand built together, and a playbook each country can run on its own.
+My proof: Global Fashion Group: the marketplace rolled out across 6 companies and 27 countries in under a year, and a global partner program launched in 10 markets. Zalora: the marketplace launched across 8 Southeast Asian markets. Rocket Internet: e-commerce ventures launched across emerging markets.
+
+#### Improving margins
+What it means: Margin gains that last because the business works differently, not one-off cuts that hurt service: pricing and mix, cost to serve, supplier terms, and the cash tied up in stock and late payments.
+My proof: Global Fashion Group: marketplace performance more than doubled year on year, and 9.8 points of margin gained over two years by moving shipping costs onto suppliers.
+
+#### Efficiency through AI
+What it means: More output from the same team, and AI spend with a return you can see. AI is aimed at the processes where it saves the most time and cost, and tokens are spent on work that pays back rather than on experiments that go nowhere. People and AI agents work from one shared company memory, with every decision kept alongside its reason. And people get help to actually change how they work.
+My proof: Booking.com: OpenAI-based automation for post-booking customer service, built and deployed, live in production, with structural savings projected. My own AI operating system, built and run daily: one memory of every project and decision, daily and weekly planning, and agents that run recurring work on their own; the same set-up I would put in place inside a company.
 > “Dani stays receptive to every idea while still making the tough calls. When it comes to follow-through, decision-making, and removing blockers, there’s no one more dependable.”
   Miranda Slayter, Principal Designer at Booking.com.
 
@@ -68,6 +128,26 @@ A strong founder with no leadership team below them, an organization shaped by i
 - Decision principles and leadership behaviors
 - Governance and systems
 - Board and investor reporting
+
+#### Building the leadership team
+What it means: The first leadership team beyond the founder: which roles the company needs next, who fills them, how decisions move from the founder to the team, and senior people spending their time leading rather than assembling information.
+My proof: Booking.com: led a division of 300+ people across product, engineering, design, commercial and operations.
+
+#### Designing the organization
+What it means: An organization shaped on purpose rather than by history. The structure follows the strategy. Every team has a written charter (its purpose, scope and way of working), and every role has a clear owner and mandate. The hiring plan is sequenced to the priorities and the budget, so hiring follows the plan instead of the latest departure.
+My proof: Zalora: the marketplace organization designed from zero, a regional team of 10 and 7 country managers each leading about 25 people. Global Fashion Group: a central team of 12 running marketplace operations for the whole group, alongside each company's own team.
+
+#### Decision principles and leadership behaviors
+What it means: How leaders are expected to decide and behave: a few principles for who decides what and how disagreements get settled, and the behaviors the company rewards and will not tolerate, so the culture holds as the team grows.
+My proof: The teams I have led at Zalora, Global Fashion Group and Booking.com.
+
+#### Governance and systems
+What it means: A company that runs without the founder in every decision. A yearly plan learns from last year's bets and sets goals, hiring and budget. Quarterly business reviews check results and reset priorities. Every core process has an owner and a known structure, connected to where the work happens. So nothing depends on one person, nothing is rebuilt from scratch, and every review ends in a decision.
+My proof: Global Fashion Group: one B2B platform and one operating playbook, built from Zalora's, run across 6 companies. Booking.com: an €80M annual promotions portfolio across travel verticals, and a budget of about €50M. My advisory work uses the leadership operating system from Claire Hughes Johnson's Scaling People: founding documents, goals and an operating cadence.
+
+#### Board and investor reporting
+What it means: One set of numbers, drawn from live data, so leaders review the board pack instead of rebuilding it every quarter, and the board sees the same picture as the team.
+My proof: Booking.com: contributed to M&A due diligence for BookingGo. Board adviser to ZYMI, preparing its first investment round.
 > “Daniele is an amazing leader – he has a rare combination of excellent problem solving skills and a very strong ability to care for and develop the team.”
   Fridtjof Berge, co-founder of Antler. We set up Global Fashion Group's marketplace division together in 2015.
 
