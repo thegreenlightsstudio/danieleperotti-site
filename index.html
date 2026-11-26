@@ -419,6 +419,10 @@
   .ask{margin-top:18px; max-width:46ch; text-wrap:balance}
   .addr{margin-top:clamp(36px, 4vw, 56px)}
   .cta-row{margin-top:22px}
+  .avail{font-size:1rem; color:var(--ink-soft)} p.avail{margin-top:16px} .avail i{display:inline-block; width:9px; height:9px; border-radius:50%; background:#3FBF7F; box-shadow:0 0 0 4px rgba(63,191,127,.22); margin-right:11px; vertical-align:1px}
+  .hero__go{display:flex; align-items:center; flex-wrap:wrap; gap:14px 22px; margin-top:clamp(26px, 4.4svh, 40px)} .hero__col .hero__go .btn{margin-top:0}
+  .avail--hero{font-size:15px; color:rgba(246,245,241,.86); white-space:nowrap}
+  @media (max-width:420px){ .hero__go{gap:12px 16px} .avail--hero{font-size:14px} }
   .two a.go{display:inline-block; margin-top:14px; padding:6px 0; font-weight:500; color:var(--accent); text-decoration:none} .two a.go:hover{text-decoration:underline; text-underline-offset:4px}
   .cta-row button.copy, .cta-row button.copy:hover{background:transparent; color:var(--ink); box-shadow:inset 0 0 0 1px color-mix(in oklab, currentColor 55%, transparent)}
   .cta-row button.copy:hover{box-shadow:inset 0 0 0 2px var(--accent)}
@@ -751,7 +755,7 @@
         <h1 class="hero__name">Daniele Perotti</h1>
         <span class="hero__label">Builder and Operator · Amsterdam</span>
         <p class="hero__pitch">I help ambitious companies with what they need next: <b>capturing new sources of growth, turning strategy into delivery, and building the leadership team to run it.</b></p>
-        <a class="btn" href="#contact">Start a conversation</a>
+        <div class="hero__go"><a class="btn" href="#contact">Start a conversation</a><span class="avail avail--hero"><i></i>Currently available</span></div>
       </div>
       <div class="hero__logos" role="img" aria-label="Booking.com, Rocket Internet, Global Fashion Group, Zalora"><i class="lg lg--booking"></i><i class="lg lg--rocket"></i><i class="lg lg--gfg"></i><i class="lg lg--zalora"></i></div>
     </div>
@@ -930,6 +934,7 @@
     <div class="contact-in">
       <h2 class="h2">Start a conversation</h2>
       <p class="ask">If one of these four problems is yours, or sits in your portfolio, let’s talk. Half an hour, and I tell you honestly whether I can help.</p>
+      <p class="avail"><i></i>Open to new engagements, from one to four days a week.</p>
       <a class="addr" id="addr" href="#contact" data-a="connect" data-b="danieleperotti" data-c="com"></a><noscript><span class="addr">connect [at] danieleperotti [dot] com</span></noscript>
       <script>(function(){var a=document.getElementById("addr"),d=a.dataset,v=d.a+"\u0040"+d.b+"."+d.c;a.textContent=v;a.href="mai"+"lto:"+v;})();</script>
       <div class="cta-row">
