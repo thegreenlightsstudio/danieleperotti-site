@@ -419,6 +419,7 @@
   .ask{margin-top:18px; max-width:46ch; text-wrap:balance}
   .addr{margin-top:clamp(36px, 4vw, 56px)}
   .cta-row{margin-top:22px}
+  .two a.go{display:inline-block; margin-top:14px; padding:6px 0; font-weight:500; color:var(--accent); text-decoration:none} .two a.go:hover{text-decoration:underline; text-underline-offset:4px}
   .cta-row button.copy, .cta-row button.copy:hover{background:transparent; color:var(--ink); box-shadow:inset 0 0 0 1px color-mix(in oklab, currentColor 55%, transparent)}
   .cta-row button.copy:hover{box-shadow:inset 0 0 0 2px var(--accent)}
   .contact-sec .ph{position:relative; aspect-ratio:auto; align-self:stretch; width:clamp(220px, 22vw, 300px)}
@@ -730,7 +731,7 @@
   <nav aria-label="Sections" id="pill-nav">
     <a href="#about" data-nav="about">About me</a>
     <a href="#solve" data-nav="problems">What I solve</a>
-    <a href="#how" data-nav="how">How we work</a>
+    <a href="#how" data-nav="how">How I work</a>
     <a href="#now" data-nav="now">Current Work &amp; Clients</a>
     <a href="#contact" data-nav="contact">Contact</a>
   <button type="button" class="theme theme--row"><span class="lbl">Dark version</span><svg class="moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 8.46 8.46 0 0 0 12 21a8.5 8.5 0 0 0 9-6.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
@@ -800,8 +801,8 @@
         <p>&ldquo;Making sense of the now&rdquo; means holding the big picture and the detail that decides it at the same time. That is what turns a founder's vision into clear execution.<br>I operate as a partner and an insider, and what we build together keeps growing long after I've left.</p>
       </div>
       <div class="two" data-sc-in data-sc-stagger="80">
-        <div><h3>For founders and CEOs</h3><p>When every decision still comes to you, when growth has slowed and the fixes tried so far haven't joined up, or when a second business has to be built without starving the first.</p></div>
-        <div><h3>For the funds behind them</h3><p>When a portfolio company stalls after a round, when a founder needs a leadership team before the next one, or when a company opens a new market or a second line of business.</p></div>
+        <div><h3>For founders and CEOs</h3><p>When every decision still comes to you, when growth has slowed and the fixes tried so far haven't joined up, or when a second business has to be built without starving the first.</p><a class="go" data-place="for founders" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3y19zBTdadUqJd-_w3PhV0zQR8_yD7X-orB0wCj3eo89svMWM7N3rY8EO9YEZnKwduFnuYiEmx" target="_blank" rel="noopener">If this is where you are, let’s talk →</a></div>
+        <div><h3>For the funds behind them</h3><p>When a portfolio company stalls after a round, when a founder needs a leadership team before the next one, or when a company opens a new market or a second line of business.</p><a class="go" data-place="for funds" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3y19zBTdadUqJd-_w3PhV0zQR8_yD7X-orB0wCj3eo89svMWM7N3rY8EO9YEZnKwduFnuYiEmx" target="_blank" rel="noopener">If this is one of your companies, let’s talk →</a></div>
       </div>
     </div>
   </section>
@@ -892,7 +893,7 @@
 
     <section class="sec" id="how" data-sc-act="flow" style="padding-top:0">
     <div class="wrap">
-      <h2 class="h2 focus" data-sc-in>How we work</h2>
+      <h2 class="h2 focus" data-sc-in>How I work with you</h2>
       <ol class="seq" data-sc-in>
         <svg class="rise" viewBox="0 0 100 144" preserveAspectRatio="none" aria-hidden="true"><path d="M0,128 C10,116 24,90 34.667,72 S58,34 69.333,16 S90,-10 100,-18"/></svg>
         <li><span class="n">1</span><h3><span class="we">We</span> agree where to start</h3><div class="tx"><p>We start from the problem, if it is already clear. If it isn't, we look at the company as a whole: how it makes money, how it runs, who leads it, and where the product is going. We then decide together which of the four problems comes first, and the result we are after.</p>
@@ -1359,6 +1360,7 @@
   document.getElementById('addr').addEventListener('click', function(){ track('contact', 'email link'); });
   document.getElementById('copy').addEventListener('click', function(){ track('contact', 'copy email'); });
   document.getElementById('book').addEventListener('click', function(){ track('contact', 'booking'); });
+  [].forEach.call(document.querySelectorAll('a.go'), function(x){ x.addEventListener('click', function(){ track('contact', 'booking, ' + x.dataset.place); }); });
   document.querySelector('#contact .li').addEventListener('click', function(){ track('contact', 'linkedin'); });
 })();
 </script>
